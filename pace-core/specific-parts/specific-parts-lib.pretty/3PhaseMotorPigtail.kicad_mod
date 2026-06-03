@@ -1,0 +1,134 @@
+(footprint "3PhaseMotorPigtail"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b6219a1f-360b-4ca3-919f-54eb9c866641")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "3PhaseMotorPigtail"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ef0bbeb2-b7c1-4c03-8640-a6cf0c74981d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fedce8b-b3ec-4302-888e-ba976fe4462c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "738c1d56-9711-4c64-9e83-5f9eea99d40f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "07d573f9-f03e-42e8-8dd7-8bf222d13937")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at -20 0)
+		(size 12 20)
+		(drill oval 5 10)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1adddade-9a8d-45dd-b718-dd7fa9f66e18")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape oval)
+				(size 12 20)
+				(zone_connect -1)
+			)
+			(layer "B.Cu"
+				(shape oval)
+				(size 12 20)
+				(zone_connect -1)
+			)
+		)
+	)
+	(pad "2" thru_hole oval
+		(at 0 0.5)
+		(size 12 20)
+		(drill oval 5 10)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f84fb12e-5c82-4d04-ae7a-879996b4281b")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape oval)
+				(size 12 20)
+				(zone_connect -1)
+			)
+			(layer "B.Cu"
+				(shape oval)
+				(size 12 20)
+				(zone_connect -1)
+			)
+		)
+	)
+	(pad "3" thru_hole oval
+		(at 20 0)
+		(size 12 20)
+		(drill oval 5 10)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "65ab2e78-d62f-42a2-bc72-3ca44550191f")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape oval)
+				(size 12 20)
+				(zone_connect -1)
+			)
+			(layer "B.Cu"
+				(shape oval)
+				(size 12 20)
+				(zone_connect -1)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
