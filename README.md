@@ -3,10 +3,12 @@ Welcome to the official hardware repository for the **PACE V0 (RACER)** motor co
 The companion firmware for this board is under active development in the companion repository: `pace-racer-firmware`.
 <div align="center">
 <img width="1050" height="750" alt="PaceRacerV0R1 Splash2" src="https://github.com/user-attachments/assets/a066d634-d60a-4260-9740-7f3dba9589d4" />
+
+
     
 ## Documentation & Resources
 ### Access the [schematics and an interactive board viewer here!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Frammp-org%2Fpace-racer-hardware%2Ftree%2Fmain%2Fpace-core)
-<img width="1000" height="300" alt="banner pace" src="https://github.com/user-attachments/assets/3dec4d54-7d3e-4bb8-8dc0-780b8b43be5c" />
+<img width="1000" height="300" alt="banner pace" src="https://github.com/user-attachments/assets/14aa4976-df60-4273-b14f-487551fd1604" />
 
 ---
 
