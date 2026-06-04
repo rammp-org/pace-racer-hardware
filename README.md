@@ -2,10 +2,8 @@
 Welcome to the official hardware repository for the **PACE V0 (RACER)** motor controller board. This repository contains all KiCad design schematics, layout files, and hardware documentation required to manufacture, test, and interface with the RACER platform. 
 The companion firmware for this board is under active development in the companion repository: `pace-racer-firmware`.
 <div align="center">
-<img width="1050" height="750" alt="PaceRacerV0R1 Splash2" src="https://github.com/user-attachments/assets/a066d634-d60a-4260-9740-7f3dba9589d4" />
+<img width="1050" height="750" alt="PaceRacerV0R1 Splash2" src="https://github.com/user-attachments/assets/96b0adf5-5786-436b-93e1-1e5da7add888" />
 
-
-    
 ## Documentation & Resources
 ### Access the [schematics and an interactive board viewer here!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Frammp-org%2Fpace-racer-hardware%2Ftree%2Fmain%2Fpace-core)
 <a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Frammp-org%2Fpace-racer-hardware%2Ftree%2Fmain%2Fpace-core">
