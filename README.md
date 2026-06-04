@@ -8,8 +8,9 @@ The companion firmware for this board is under active development in the compani
     
 ## Documentation & Resources
 ### Access the [schematics and an interactive board viewer here!](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Frammp-org%2Fpace-racer-hardware%2Ftree%2Fmain%2Fpace-core)
-<img width="1000" height="300" alt="banner pace" src="https://github.com/user-attachments/assets/14aa4976-df60-4273-b14f-487551fd1604" />
-
+<a href="https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2Frammp-org%2Fpace-racer-hardware%2Ftree%2Fmain%2Fpace-core">
+  <img width="1000" height="300" alt="Access Interactive KiCanvas Board Viewer & Schematics" src="https://github.com/user-attachments/assets/14aa4976-df60-4273-b14f-487551fd1604" />
+</a>
 ---
 
 <div align="left">
