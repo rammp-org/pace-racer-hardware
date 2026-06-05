@@ -37,7 +37,7 @@ jobs:
           dir: pace-core/output
           schema: pace-core/pace-core.kicad_sch
           board: pace-core/pace-core.kicad_pcb
-          additional_args: --skip-check
+          additional_args: -s run_erc,run_drc
 
       - uses: actions/upload-artifact@v4
         if: always()
