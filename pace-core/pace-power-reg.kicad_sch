@@ -3515,16 +3515,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 179.07) (xy 50.8 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c1e682a-3be3-4d68-a256-c1542851d68f")
-	)
-	(wire
-		(pts
 			(xy 41.91 168.91) (xy 53.34 168.91)
 		)
 		(stroke
@@ -3662,16 +3652,6 @@
 			(type default)
 		)
 		(uuid "bacff1fd-b3b1-4abe-997b-f5c2c7205d6f")
-	)
-	(wire
-		(pts
-			(xy 41.91 179.07) (xy 50.8 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd68847d-1e0c-415a-b981-0bf36964eb2d")
 	)
 	(wire
 		(pts
@@ -6712,83 +6692,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 41.91 179.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "92f318f1-00ee-4275-a41f-717af74dcede")
-		(property "Reference" "TP28"
-			(at 35.052 178.816 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 36.068 176.276 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 41.91 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 41.91 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7a905574-da74-4414-bbb6-ce28689f2260")
-		)
-		(instances
-			(project "pace-core"
-				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
-					(reference "TP28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "specific-parts-lib:NXH100VB470M16*31.5LO")
 		(at 78.74 49.53 270)
 		(unit 1)
@@ -6972,85 +6875,6 @@
 			(project "pace-core"
 				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
 					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDPWR")
-		(at 50.8 181.61 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a08feec8-943a-4ece-83c6-734539cddc72")
-		(property "Reference" "#PWR092"
-			(at 50.8 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDPWR"
-			(at 50.927 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 50.8 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7c619216-f669-468c-bd15-86ca72a717cd")
-		)
-		(instances
-			(project "pace-core"
-				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
-					(reference "#PWR092")
 					(unit 1)
 				)
 			)

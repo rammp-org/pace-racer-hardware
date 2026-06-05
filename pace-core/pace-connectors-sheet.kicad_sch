@@ -7604,7 +7604,7 @@
 		)
 		(uuid "393aa504-b7e8-49e2-9a76-d61df4f9cc43")
 		(property "Net Class" "+5V-USB"
-			(at 65.024 36.322 0)
+			(at 66.04 38.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
