@@ -1,0 +1,51 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+
+outputs:
+  - name: gerbers
+    comment: Gerber files
+    type: gerber
+    dir: output/gerbers
+    layers:
+      - all
+
+  - name: drill
+    comment: Excellon drill files
+    type: excellon
+    dir: output/gerbers
+
+  - name: fab_zip
+    comment: Zipped fabrication package
+    type: compress
+    dir: output
+    options:
+      files:
+        - from_output: gerbers
+          dest: /
+        - from_output: drill
+          dest: /
+
+  - name: bom
+    comment: Bill of materials
+    type: bom
+    dir: output
+    options:
+      columns:
+        - References
+        - Quantity
+        - Value
+        - Footprint
+        - Datasheet
+
+  - name: position
+    comment: Pick and place centroid
+    type: position
+    dir: output
+    options:
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
