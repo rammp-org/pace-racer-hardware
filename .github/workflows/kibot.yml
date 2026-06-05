@@ -8,8 +8,6 @@ on:
 jobs:
   kibot:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/inti-cmnb/kicad_auto:Ki9_latest
 
     steps:
       - uses: actions/checkout@v4
@@ -19,8 +17,13 @@ jobs:
       - name: ERC & DRC
         id: checks
         continue-on-error: true
-        working-directory: pace-core
-        run: kibot -c .kibot.yaml -s gerbers,drill,fab_zip,bom,position
+        uses: INTI-CMNB/KiBot@v2_k10
+        with:
+          config: pace-core/.kibot.yaml
+          dir: pace-core/output
+          schema: pace-core/pace-core.kicad_sch
+          board: pace-core/pace-core.kicad_pcb
+          skip: gerbers,drill,fab_zip,bom,position
 
       - name: Annotate check failure
         if: steps.checks.outcome == 'failure'
@@ -28,8 +31,13 @@ jobs:
 
       # Generate outputs regardless of check result.
       - name: Generate outputs
-        working-directory: pace-core
-        run: kibot --skip-check -c .kibot.yaml
+        uses: INTI-CMNB/KiBot@v2_k10
+        with:
+          config: pace-core/.kibot.yaml
+          dir: pace-core/output
+          schema: pace-core/pace-core.kicad_sch
+          board: pace-core/pace-core.kicad_pcb
+          additional_args: --skip-check
 
       - uses: actions/upload-artifact@v4
         if: always()
