@@ -16819,6 +16819,30 @@
 			)
 		)
 	)
+	(global_label "enc-spi-copi"
+		(shape input)
+		(at 113.03 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "902ac6a4-3f5e-42b8-b11d-39cb0db14fae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.2595 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "i2c-SDA"
 		(shape input)
 		(at 113.03 40.64 0)
@@ -16832,30 +16856,6 @@
 		(uuid "a333271b-587b-41b0-9dd7-4841d0a54454")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 124.0586 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "GPIO36"
-		(shape input)
-		(at 113.03 48.26 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a5e28ce9-f2cb-4796-9426-9ba53dfa1549")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.9095 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.35
+          "min_clearance": 0.16
         }
       },
       "diff_pair_dimensions": [
@@ -67,48 +67,44 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|139900000|117300000|63acf3fd-35da-4e31-b7f6-fb2d38412379|a8ec8904-677f-44c3-95fe-4000f10c2d4e",
-          ""
+          "clearance|138641759|112841688|0f340305-0719-439f-bb4c-6f5bee5cbdfe|9c987c52-b38b-4588-9e28-48d478aa9314",
+          "Artifact of nettie useage"
         ],
         [
-          "clearance|139900000|117300000|9c987c52-b38b-4588-9e28-48d478aa9314|0f340305-0719-439f-bb4c-6f5bee5cbdfe",
-          ""
+          "clearance|145500000|110800000|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|56afd788-6014-46fa-ba41-129feea25a0b",
+          "Artifact of nettie useage"
         ],
         [
-          "clearance|141500000|121300000|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|56afd788-6014-46fa-ba41-129feea25a0b",
-          ""
+          "clearance|175582280|103226052|5964952b-d532-474d-9e48-fbb88052ff8a|f4d57dfb-92ac-4ca3-bffa-3530172b1ac8",
+          "Nettie artifact"
         ],
         [
-          "clearance|169053806|112500000|f4d57dfb-92ac-4ca3-bffa-3530172b1ac8|5964952b-d532-474d-9e48-fbb88052ff8a",
-          ""
+          "shorting_items|138677660|112877590|63acf3fd-35da-4e31-b7f6-fb2d38412379|9c987c52-b38b-4588-9e28-48d478aa9314",
+          "Artifact of nettie useage"
         ],
         [
-          "shorting_items|139550000|119000000|63acf3fd-35da-4e31-b7f6-fb2d38412379|9c987c52-b38b-4588-9e28-48d478aa9314",
-          ""
+          "shorting_items|139879741|111675509|63acf3fd-35da-4e31-b7f6-fb2d38412379|3445b262-634e-4f21-a7fb-8e29ebc668eb",
+          "Nettie artifact"
         ],
         [
-          "shorting_items|139900000|117300000|63acf3fd-35da-4e31-b7f6-fb2d38412379|9c987c52-b38b-4588-9e28-48d478aa9314",
-          ""
+          "shorting_items|145096747|112492510|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|37e417c1-99b0-44aa-a6bd-1e931c91db62",
+          "Nettie artifact"
         ],
         [
-          "shorting_items|141100000|119600917|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|f402972f-bf20-457d-8ecb-65a62809039c",
-          ""
+          "shorting_items|145096747|114192510|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|f402972f-bf20-457d-8ecb-65a62809039c",
+          "Artifact of nettie useage"
         ],
         [
-          "shorting_items|141100000|121300917|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|f402972f-bf20-457d-8ecb-65a62809039c",
-          ""
+          "shorting_items|172933321|101072067|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|cdbff16e-6a5f-4b18-b4c2-2391d3fc35cd",
+          "Artifact of nettie useage"
         ],
         [
-          "shorting_items|169053806|112737313|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|f4d57dfb-92ac-4ca3-bffa-3530172b1ac8",
-          ""
+          "shorting_items|173101127|100904260|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|f4d57dfb-92ac-4ca3-bffa-3530172b1ac8",
+          "Artifact of nettie useage"
         ],
         [
-          "shorting_items|170753806|112737313|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|5964952b-d532-474d-9e48-fbb88052ff8a",
-          ""
-        ],
-        [
-          "shorting_items|172453806|112737313|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|cdbff16e-6a5f-4b18-b4c2-2391d3fc35cd",
-          ""
+          "shorting_items|174135402|102274148|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|cdbff16e-6a5f-4b18-b4c2-2391d3fc35cd",
+          "Nettie artifact"
         ]
       ],
       "meta": {
@@ -155,8 +151,8 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "ignore",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
@@ -175,7 +171,7 @@
         "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "ignore",
         "zones_intersect": "error"
       },
       "rules": {
@@ -194,7 +190,7 @@
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.25,
         "min_track_width": 0.16,
-        "min_via_annular_width": 0.2,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
