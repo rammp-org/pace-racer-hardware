@@ -1,0 +1,18 @@
+# .github/workflows/pr-kicad-diff-delete.yaml
+name: KiCad Diff Delete
+
+concurrency:
+  group: kiri-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    types:
+    - closed
+
+jobs:
+  kiri-delete:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Kiri
+      uses: usa-reddragon/kiri-github-action@v2
