@@ -1,0 +1,9 @@
+### Missing 3D models - created on 2026-08-06 10:50
+### Printed by checking_3D_models plugin
+Board file: /Users/alxchunlin/pcb-stuff/pace-core-hardware/pace-core/pace-core.kicad_pcb
+3D missing models written to:
+/Users/alxchunlin/pcb-stuff/pace-core-hardware/pace-core/pace-core_missing3Dmodels.txt
+-------
+-------
+NUM of 3D missing models:0
+checked extensions ['.stp', '.step', '.stpZ']
