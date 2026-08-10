@@ -2,7 +2,7 @@
 name: KiCad Pull Request Diff
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: kiri-pr-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 on:
