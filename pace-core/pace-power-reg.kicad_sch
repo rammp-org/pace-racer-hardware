@@ -2107,6 +2107,210 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "specific-parts-lib:PA100V22M6X9"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PA100V22M6X9"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "specific-parts-lib:CAP-TH_BD6.3-P2.50-D0.6-FD"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C49233038.pdf"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "JIERR(捷而瑞)"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "PA100V22M6X9"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C49233038"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PA100V22M6X9_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.51 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.29 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.78 1.78) (xy -1.78 0.76)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.51 1.78) (xy -0.51 -1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.51 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.13 -1.75)
+					(mid 0.4201 0.0241)
+					(end 1.15 1.79)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "specific-parts-lib:SRU1038-101Y"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2536,6 +2740,18 @@
 		(uuid "a139e57c-62f0-42c5-be8f-b38a4916ad98")
 	)
 	(rectangle
+		(start 34.29 50.8)
+		(end 102.87 59.69)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d805acde-ba03-41a4-bc94-a81005aa91ce")
+	)
+	(rectangle
 		(start 22.86 152.4)
 		(end 165.1 193.04)
 		(stroke
@@ -2628,6 +2844,16 @@
 			)
 		)
 		(uuid "b5e7a08a-6a24-4f25-acda-50d65b1fb803")
+	)
+	(text "Al. Poly Size test"
+		(exclude_from_sim no)
+		(at 33.274 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f4c2ca0e-667f-4b4a-8cca-caea3819b1ef")
 	)
 	(text_box "Place across each half bridge phase"
 		(exclude_from_sim no)
@@ -2776,10 +3002,10 @@
 		(uuid "0c5fbcfe-cf2d-4135-a407-5026a41909b1")
 	)
 	(junction
-		(at 78.74 39.37)
+		(at 72.39 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "20441ace-c15a-4d21-989d-28ecaa66cdd7")
+		(uuid "1571393a-0ea4-4acc-8eed-e422fb3158c4")
 	)
 	(junction
 		(at 212.09 63.5)
@@ -2788,10 +3014,40 @@
 		(uuid "233d51d4-0b15-4d62-afc9-c8daa70a390e")
 	)
 	(junction
+		(at 85.09 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33f76777-2820-4cf0-a4c7-287a196574f6")
+	)
+	(junction
+		(at 78.74 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37137489-ba1c-447a-8913-090e19a9456e")
+	)
+	(junction
 		(at 109.22 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d7fa5f5-55b6-46fd-84e8-447d62c76b7b")
+	)
+	(junction
+		(at 85.09 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "472bc0b1-6f94-477a-9a3c-5d1c98e0c54e")
+	)
+	(junction
+		(at 53.34 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c0727a7-899c-47a3-a34f-e71d8caf9912")
+	)
+	(junction
+		(at 59.69 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53edcb16-744b-46e4-9402-006d8ef2c360")
 	)
 	(junction
 		(at 102.87 124.46)
@@ -2800,16 +3056,16 @@
 		(uuid "5662f367-661a-41c1-9bd9-89a1fe74cc8d")
 	)
 	(junction
+		(at 78.74 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59a12b1b-f198-4d59-b6d2-983e4b74fff4")
+	)
+	(junction
 		(at 200.66 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6083bb0e-60ea-46a6-895f-c86b57eb99cf")
-	)
-	(junction
-		(at 91.44 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "620ef96a-33ce-4b52-aefe-849fd7611207")
 	)
 	(junction
 		(at 86.36 124.46)
@@ -2824,18 +3080,6 @@
 		(uuid "6766bf19-aa49-48fe-87ea-7100a29448f3")
 	)
 	(junction
-		(at 53.34 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72c1ee97-0893-4452-898d-81eddea94eff")
-	)
-	(junction
-		(at 66.04 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7775bec8-e034-4fab-a284-d1d6c7dc0d21")
-	)
-	(junction
 		(at 184.15 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2848,34 +3092,40 @@
 		(uuid "800a0772-3a19-434e-93cd-d95973239dca")
 	)
 	(junction
-		(at 66.04 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85a2689a-8a55-4cda-96e0-7da46153f2aa")
-	)
-	(junction
-		(at 53.34 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d30ece7-fc59-4124-a816-9d415a190b67")
-	)
-	(junction
 		(at 57.15 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "997fb280-19cf-4fda-a317-7ea2ca43dc53")
 	)
 	(junction
-		(at 78.74 60.96)
+		(at 53.34 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a9530861-f9c1-4127-9481-74dfa9a78620")
+		(uuid "a314c952-37eb-4aef-a02b-ce905129ee4a")
+	)
+	(junction
+		(at 66.04 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a879006d-945a-4120-8255-458f7424d1cb")
+	)
+	(junction
+		(at 43.18 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad1bf862-9622-4088-98a8-eb7111c1533b")
 	)
 	(junction
 		(at 39.37 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae31fb7d-3218-4212-bc53-c04bfa045b73")
+	)
+	(junction
+		(at 66.04 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae8c7d1e-eecc-41ed-8fc8-f7adb9ae70cb")
 	)
 	(junction
 		(at 226.06 49.53)
@@ -2888,12 +3138,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c10e401f-3e1c-4b64-9262-3842f8ebb46e")
-	)
-	(junction
-		(at 91.44 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c586ed01-f138-4eb5-a35c-ff67873b3df7")
 	)
 	(junction
 		(at 102.87 101.6)
@@ -2920,16 +3164,28 @@
 		(uuid "d79acbbd-017a-4dff-a456-c47aa058c552")
 	)
 	(junction
+		(at 59.69 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7c41cf1-1f78-4f23-a3a5-3bcb72a5911d")
+	)
+	(junction
+		(at 72.39 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd130f84-d5f4-4dad-8376-df77acd74c30")
+	)
+	(junction
 		(at 133.35 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de75bcbb-6cf6-49c3-bdad-036baaae3a29")
 	)
 	(junction
-		(at 64.77 176.53)
+		(at 43.18 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e02c2952-acfc-48f3-bee3-c972220a4e33")
+		(uuid "e29650b7-7eb2-4c74-9854-93d91587b13f")
 	)
 	(junction
 		(at 121.92 60.96)
@@ -2955,6 +3211,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 50.8) (xy 59.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08567b4b-9eac-4271-bbd7-33f67a7a5d69")
+	)
+	(wire
+		(pts
 			(xy 226.06 49.53) (xy 241.3 49.53)
 		)
 		(stroke
@@ -2975,7 +3241,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 39.37) (xy 78.74 39.37)
+			(xy 66.04 39.37) (xy 72.39 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3015,26 +3281,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 173.99) (xy 64.77 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "169459d8-f927-4e2c-bc02-104d9153b701")
-	)
-	(wire
-		(pts
-			(xy 66.04 44.45) (xy 66.04 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16964b19-f82d-46ce-8aae-bd3889f0bf64")
-	)
-	(wire
-		(pts
 			(xy 41.91 166.37) (xy 53.34 166.37)
 		)
 		(stroke
@@ -3065,7 +3311,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 54.61) (xy 78.74 60.96)
+			(xy 78.74 49.53) (xy 78.74 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3075,17 +3321,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 176.53) (xy 64.77 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d11dcc1-9ce1-401f-b1e2-1d75546112e5")
-	)
-	(wire
-		(pts
-			(xy 91.44 39.37) (xy 109.22 39.37)
+			(xy 85.09 39.37) (xy 109.22 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3115,13 +3351,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 44.45) (xy 78.74 39.37)
+			(xy 43.18 60.96) (xy 53.34 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2457cf30-ca7f-4201-bdb4-3ee6e564784b")
+		(uuid "262e9cc0-5fac-4ff2-9dae-eec0836e9e55")
 	)
 	(wire
 		(pts
@@ -3135,7 +3371,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 60.96) (xy 91.44 60.96)
+			(xy 43.18 39.37) (xy 43.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "297ab682-69e6-4b70-a515-f210b45bce40")
+	)
+	(wire
+		(pts
+			(xy 78.74 60.96) (xy 85.09 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3175,7 +3421,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 39.37) (xy 53.34 39.37)
+			(xy 33.02 39.37) (xy 43.18 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3345,7 +3591,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 60.96) (xy 53.34 60.96)
+			(xy 33.02 60.96) (xy 43.18 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3385,16 +3631,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 176.53) (xy 64.77 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63ce557c-c3cd-4ee2-88a2-953e6b39bd6e")
-	)
-	(wire
-		(pts
 			(xy 241.3 46.99) (xy 241.3 49.53)
 		)
 		(stroke
@@ -3405,13 +3641,23 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 54.61) (xy 91.44 60.96)
+			(xy 85.09 60.96) (xy 109.22 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b79055e-8531-4f7c-817d-2bd8ce8eba49")
+		(uuid "6bda3c0a-0798-4c70-b523-cb29ee49f466")
+	)
+	(wire
+		(pts
+			(xy 72.39 39.37) (xy 78.74 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c11449f-859c-48a6-b801-fb96cfcdcc4c")
 	)
 	(wire
 		(pts
@@ -3435,7 +3681,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 54.61) (xy 66.04 60.96)
+			(xy 66.04 49.53) (xy 66.04 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3465,13 +3711,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 44.45) (xy 53.34 39.37)
+			(xy 59.69 60.96) (xy 66.04 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f04201b-b630-451d-9241-b2688ee3405e")
+		(uuid "7c31cc15-8182-43c0-9165-da3f70d8345f")
 	)
 	(wire
 		(pts
@@ -3485,7 +3731,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 60.96) (xy 66.04 60.96)
+			(xy 53.34 60.96) (xy 59.69 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3565,6 +3811,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 50.8) (xy 85.09 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ff7b93b-1b4f-44a6-b452-3e8996fb9c0a")
+	)
+	(wire
+		(pts
 			(xy 208.28 49.53) (xy 226.06 49.53)
 		)
 		(stroke
@@ -3575,7 +3831,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 60.96) (xy 78.74 60.96)
+			(xy 66.04 60.96) (xy 72.39 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3585,7 +3841,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 39.37) (xy 91.44 39.37)
+			(xy 78.74 39.37) (xy 85.09 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3605,16 +3861,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 173.99) (xy 64.77 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab0b4221-f9a9-48ff-b94d-e26fc6ccd72c")
-	)
-	(wire
-		(pts
 			(xy 158.75 179.07) (xy 158.75 182.88)
 		)
 		(stroke
@@ -3622,6 +3868,26 @@
 			(type default)
 		)
 		(uuid "afb0dbe6-585b-4e3e-8d2b-a00f0a9402f3")
+	)
+	(wire
+		(pts
+			(xy 72.39 50.8) (xy 72.39 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b06240d6-40c2-4478-b7c1-fe5c4f49da71")
+	)
+	(wire
+		(pts
+			(xy 72.39 60.96) (xy 78.74 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b10ccbe6-9b75-4a6e-aab2-bca9bf733a35")
 	)
 	(wire
 		(pts
@@ -3642,6 +3908,16 @@
 			(type default)
 		)
 		(uuid "b625b637-7c9d-46f1-947a-6afcd200c599")
+	)
+	(wire
+		(pts
+			(xy 59.69 39.37) (xy 66.04 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b960e87b-c777-45fa-a005-17cd36a46077")
 	)
 	(wire
 		(pts
@@ -3715,6 +3991,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 39.37) (xy 53.34 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd739074-f0e5-4e2a-aea2-36f2c5a19d99")
+	)
+	(wire
+		(pts
 			(xy 86.36 110.49) (xy 86.36 124.46)
 		)
 		(stroke
@@ -3732,16 +4018,6 @@
 			(type default)
 		)
 		(uuid "d4f75f92-45da-4b17-9c53-268289a73bb4")
-	)
-	(wire
-		(pts
-			(xy 91.44 44.45) (xy 91.44 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da8c3538-07d9-4e55-8c12-b1511e59b8f5")
 	)
 	(wire
 		(pts
@@ -3802,16 +4078,6 @@
 			(type default)
 		)
 		(uuid "e1ed172c-710d-4b0c-8cfd-820aa404bbe6")
-	)
-	(wire
-		(pts
-			(xy 91.44 60.96) (xy 109.22 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2900675-e8ef-44ed-b7fa-b67597aecb5a")
 	)
 	(wire
 		(pts
@@ -3895,7 +4161,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 39.37) (xy 66.04 39.37)
+			(xy 53.34 39.37) (xy 59.69 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3905,7 +4171,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 54.61) (xy 53.34 60.96)
+			(xy 53.34 49.53) (xy 53.34 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4157,7 +4423,7 @@
 	)
 	(symbol
 		(lib_id "specific-parts-lib:NXH100VB470M16*31.5LO")
-		(at 66.04 49.53 270)
+		(at 66.04 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4167,7 +4433,7 @@
 		(dnp no)
 		(uuid "0aafe89f-a083-4a66-b21a-b493c53d5484")
 		(property "Reference" "C20"
-			(at 61.722 53.34 90)
+			(at 61.722 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4177,7 +4443,7 @@
 			)
 		)
 		(property "Value" "470uF 100V"
-			(at 65.532 55.118 90)
+			(at 65.532 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4187,7 +4453,7 @@
 			)
 		)
 		(property "Footprint" "specific-parts-lib:CAP-TH_BD16.0-P7.50-D1.2-FD"
-			(at 58.42 49.53 0)
+			(at 58.42 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4198,7 +4464,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C18164658.pdf"
-			(at 55.88 49.53 0)
+			(at 55.88 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4209,7 +4475,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 49.53 0)
+			(at 66.04 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4220,7 +4486,7 @@
 			)
 		)
 		(property "Manufacturer" "SAMYOUNG(韩国三莹)"
-			(at 53.34 49.53 0)
+			(at 53.34 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4231,7 +4497,7 @@
 			)
 		)
 		(property "MPN" "NXH100VB470M16*31.5 LO"
-			(at 50.8 49.53 0)
+			(at 50.8 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4242,7 +4508,7 @@
 			)
 		)
 		(property "LCSC Part" "C18164658"
-			(at 48.26 49.53 0)
+			(at 48.26 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4577,6 +4843,120 @@
 			(project "pace-core"
 				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
 					(reference "#PWR0135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "specific-parts-lib:PA100V22M6X9")
+		(at 85.09 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1bf4dba4-025f-4ddb-8820-65bc8dbb8a57")
+		(property "Reference" "C39"
+			(at 87.63 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PA100V22M6X9"
+			(at 87.376 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:CAP-TH_BD6.3-P2.50-D0.6-FD"
+			(at 77.47 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49233038.pdf"
+			(at 74.93 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JIERR(捷而瑞)"
+			(at 72.39 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PA100V22M6X9"
+			(at 69.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C49233038"
+			(at 67.31 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9710351-f001-468d-8726-b6a18f9bbcc9")
+		)
+		(pin "2"
+			(uuid "3f0d4a7c-a0e2-487d-a34b-f37b10696de0")
+		)
+		(instances
+			(project "pace-core"
+				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -5427,6 +5807,120 @@
 		)
 	)
 	(symbol
+		(lib_id "specific-parts-lib:PA100V22M6X9")
+		(at 43.18 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41932aa2-72df-4b92-b3f1-0f9f298ee50b")
+		(property "Reference" "C36"
+			(at 45.72 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PA100V22M6X9"
+			(at 45.466 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:CAP-TH_BD6.3-P2.50-D0.6-FD"
+			(at 35.56 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49233038.pdf"
+			(at 33.02 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JIERR(捷而瑞)"
+			(at 30.48 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PA100V22M6X9"
+			(at 27.94 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C49233038"
+			(at 25.4 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d27a822-acad-4a71-b755-030a6bb986b5")
+		)
+		(pin "2"
+			(uuid "3fa0cdbe-73b0-43b4-9383-4a2ebae5d959")
+		)
+		(instances
+			(project "pace-core"
+				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 41.91 161.29 90)
 		(unit 1)
@@ -5860,6 +6354,120 @@
 		)
 	)
 	(symbol
+		(lib_id "specific-parts-lib:PA100V22M6X9")
+		(at 72.39 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4f349adc-3f22-4504-85c1-dda14bfa68a8")
+		(property "Reference" "C38"
+			(at 74.93 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PA100V22M6X9"
+			(at 74.676 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:CAP-TH_BD6.3-P2.50-D0.6-FD"
+			(at 64.77 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49233038.pdf"
+			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JIERR(捷而瑞)"
+			(at 59.69 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PA100V22M6X9"
+			(at 57.15 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C49233038"
+			(at 54.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1588bdc-efac-4f9b-a49d-2d126114d23a")
+		)
+		(pin "2"
+			(uuid "616007d2-91c5-44bb-baef-574e74f6a825")
+		)
+		(instances
+			(project "pace-core"
+				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 109.22 49.53 0)
 		(unit 1)
@@ -6177,118 +6785,6 @@
 			(project "pace-core"
 				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "specific-parts-lib:NXH100VB470M16*31.5LO")
-		(at 91.44 49.53 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6eb68602-ae39-426d-9bd7-e6dce00b1f37")
-		(property "Reference" "C22"
-			(at 87.122 52.832 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470uF 100V"
-			(at 90.932 55.118 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "specific-parts-lib:CAP-TH_BD16.0-P7.50-D1.2-FD"
-			(at 83.82 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C18164658.pdf"
-			(at 81.28 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "SAMYOUNG(韩国三莹)"
-			(at 78.74 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "NXH100VB470M16*31.5 LO"
-			(at 76.2 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C18164658"
-			(at 73.66 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1fd667e9-d91c-434f-be7c-afdbeb0c44d4")
-		)
-		(pin "1"
-			(uuid "d876505d-3f01-4cd8-8dd8-8ad35270fd08")
-		)
-		(instances
-			(project "pace-core"
-				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
-					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -6693,7 +7189,7 @@
 	)
 	(symbol
 		(lib_id "specific-parts-lib:NXH100VB470M16*31.5LO")
-		(at 78.74 49.53 270)
+		(at 78.74 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6703,7 +7199,7 @@
 		(dnp no)
 		(uuid "935388b3-59ca-4782-a607-75478d7bf7ab")
 		(property "Reference" "C21"
-			(at 74.422 53.086 90)
+			(at 74.422 48.006 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6713,7 +7209,7 @@
 			)
 		)
 		(property "Value" "470uF 100V"
-			(at 78.232 55.118 90)
+			(at 78.232 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6723,7 +7219,7 @@
 			)
 		)
 		(property "Footprint" "specific-parts-lib:CAP-TH_BD16.0-P7.50-D1.2-FD"
-			(at 71.12 49.53 0)
+			(at 71.12 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6734,7 +7230,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C18164658.pdf"
-			(at 68.58 49.53 0)
+			(at 68.58 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6745,7 +7241,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 49.53 0)
+			(at 78.74 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6756,7 +7252,7 @@
 			)
 		)
 		(property "Manufacturer" "SAMYOUNG(韩国三莹)"
-			(at 66.04 49.53 0)
+			(at 66.04 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6767,7 +7263,7 @@
 			)
 		)
 		(property "MPN" "NXH100VB470M16*31.5 LO"
-			(at 63.5 49.53 0)
+			(at 63.5 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6778,7 +7274,7 @@
 			)
 		)
 		(property "LCSC Part" "C18164658"
-			(at 60.96 49.53 0)
+			(at 60.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6798,6 +7294,120 @@
 			(project "pace-core"
 				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "specific-parts-lib:PA100V22M6X9")
+		(at 59.69 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9a1a9ee6-4381-47d5-a912-4b6c774ef774")
+		(property "Reference" "C37"
+			(at 62.23 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PA100V22M6X9"
+			(at 61.976 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:CAP-TH_BD6.3-P2.50-D0.6-FD"
+			(at 52.07 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C49233038.pdf"
+			(at 49.53 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JIERR(捷而瑞)"
+			(at 46.99 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PA100V22M6X9"
+			(at 44.45 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C49233038"
+			(at 41.91 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bad24572-2c05-41e3-a256-0ef6f2ab2d70")
+		)
+		(pin "2"
+			(uuid "79a83866-9c83-4fc9-975b-71d9f42e93fb")
+		)
+		(instances
+			(project "pace-core"
+				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -7306,160 +7916,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 41.91 173.99 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c366e0b2-3029-4775-9a96-89a48a1b46c5")
-		(property "Reference" "TP26"
-			(at 35.052 173.736 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 36.068 171.196 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 41.91 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 41.91 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d8d44f6-a968-4254-842c-2449db9f1dd9")
-		)
-		(instances
-			(project "pace-core"
-				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
-					(reference "TP26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 41.91 176.53 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c88b3fc2-98e9-40bd-bd1d-cf6b4c0d9d0c")
-		(property "Reference" "TP27"
-			(at 35.052 176.276 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 36.068 173.736 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 41.91 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 41.91 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "75300feb-ec33-4d06-9ec5-6b72e2a262a1")
-		)
-		(instances
-			(project "pace-core"
-				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
-					(reference "TP27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 134.62 49.53 0)
 		(unit 1)
@@ -7780,83 +8236,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 64.77 181.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e06d7367-c50a-40dc-bc59-421ba8b793c7")
-		(property "Reference" "#PWR091"
-			(at 64.77 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 64.77 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9f27ae3f-6e9b-4b96-a07c-e880150ae2b4")
-		)
-		(instances
-			(project "pace-core"
-				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/3a756260-b9ee-4385-b129-9c7aa02487f6"
-					(reference "#PWR091")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 41.91 171.45 90)
 		(unit 1)
@@ -7935,7 +8314,7 @@
 	)
 	(symbol
 		(lib_id "specific-parts-lib:NXH100VB470M16*31.5LO")
-		(at 53.34 49.53 270)
+		(at 53.34 44.45 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7945,7 +8324,7 @@
 		(dnp no)
 		(uuid "f1e8d4ff-572a-44df-b745-71dab7f26c21")
 		(property "Reference" "C19"
-			(at 49.022 53.34 90)
+			(at 49.022 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7955,7 +8334,7 @@
 			)
 		)
 		(property "Value" "470uF 100V"
-			(at 52.578 55.118 90)
+			(at 52.578 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7965,7 +8344,7 @@
 			)
 		)
 		(property "Footprint" "specific-parts-lib:CAP-TH_BD16.0-P7.50-D1.2-FD"
-			(at 45.72 49.53 0)
+			(at 45.72 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7976,7 +8355,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C18164658.pdf"
-			(at 43.18 49.53 0)
+			(at 43.18 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7987,7 +8366,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 49.53 0)
+			(at 53.34 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7998,7 +8377,7 @@
 			)
 		)
 		(property "Manufacturer" "SAMYOUNG(韩国三莹)"
-			(at 40.64 49.53 0)
+			(at 40.64 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8009,7 +8388,7 @@
 			)
 		)
 		(property "MPN" "NXH100VB470M16*31.5 LO"
-			(at 38.1 49.53 0)
+			(at 38.1 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8020,7 +8399,7 @@
 			)
 		)
 		(property "LCSC Part" "C18164658"
-			(at 35.56 49.53 0)
+			(at 35.56 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1401,7 +1401,7 @@
 		)
 		(uuid "3daf1d1d-7f5c-4095-9ee9-fc1dbc7b1cbe")
 	)
-	(text "MT6701 Encoder"
+	(text "SPI Encoder"
 		(exclude_from_sim no)
 		(at 184.404 41.021 0)
 		(effects
@@ -2670,7 +2670,7 @@
 			)
 		)
 	)
-	(global_label "GPIO36"
+	(global_label "enc-spi-copi"
 		(shape input)
 		(at 95.25 64.77 0)
 		(fields_autoplaced yes)
@@ -2682,7 +2682,7 @@
 		)
 		(uuid "51554118-48d6-4485-92ed-fdbc8d1222c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.1295 64.77 0)
+			(at 111.4795 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -7,7 +7,8 @@
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "b6219a1f-360b-4ca3-919f-54eb9c866641")
+		(hide yes)
+		(uuid "34782731-7e13-42ec-86f0-ab067f3bd412")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +20,8 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "ef0bbeb2-b7c1-4c03-8640-a6cf0c74981d")
+		(hide yes)
+		(uuid "fcd6ba40-9b8a-4a4e-b9df-10beb972f2cb")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8fedce8b-b3ec-4302-888e-ba976fe4462c")
+		(uuid "bdeb3a66-033b-47c1-8bfb-709b5755cdc5")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "738c1d56-9711-4c64-9e83-5f9eea99d40f")
+		(uuid "dfab64cb-bbbe-4873-b1c2-ee2d04610b2c")
 		(effects
 			(font
 				(size 1 1)
@@ -55,77 +57,98 @@
 	)
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
-	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "07d573f9-f03e-42e8-8dd7-8bf222d13937")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(pad "1" thru_hole oval
-		(at -20 0)
-		(size 12 20)
-		(drill oval 5 10)
+	(pad "1" thru_hole circle
+		(at -14 0)
+		(size 5 5)
+		(drill 3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "1adddade-9a8d-45dd-b718-dd7fa9f66e18")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "cf51d14e-adf7-44f8-a321-da8947bb32eb")
 		(padstack
 			(mode front_inner_back)
 			(layer "Inner"
-				(shape oval)
-				(size 12 20)
+				(shape circle)
+				(size 5 5)
 				(zone_connect -1)
 			)
 			(layer "B.Cu"
-				(shape oval)
-				(size 12 20)
-				(zone_connect -1)
-			)
-		)
-	)
-	(pad "2" thru_hole oval
-		(at 0 0.5)
-		(size 12 20)
-		(drill oval 5 10)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "f84fb12e-5c82-4d04-ae7a-879996b4281b")
-		(padstack
-			(mode front_inner_back)
-			(layer "Inner"
-				(shape oval)
-				(size 12 20)
-				(zone_connect -1)
-			)
-			(layer "B.Cu"
-				(shape oval)
-				(size 12 20)
+				(shape circle)
+				(size 5 5)
 				(zone_connect -1)
 			)
 		)
 	)
-	(pad "3" thru_hole oval
-		(at 20 0)
-		(size 12 20)
-		(drill oval 5 10)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 5 5)
+		(drill 3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "65ab2e78-d62f-42a2-bc72-3ca44550191f")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "ea220998-47c7-4a49-b6a5-647dfaed92f0")
 		(padstack
 			(mode front_inner_back)
 			(layer "Inner"
-				(shape oval)
-				(size 12 20)
+				(shape circle)
+				(size 5 5)
 				(zone_connect -1)
 			)
 			(layer "B.Cu"
-				(shape oval)
-				(size 12 20)
+				(shape circle)
+				(size 5 5)
+				(zone_connect -1)
+			)
+		)
+	)
+	(pad "3" thru_hole circle
+		(at 14 0)
+		(size 5 5)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "59e58961-d411-44fc-abec-aadeb1b2bdde")
+		(padstack
+			(mode front_inner_back)
+			(layer "Inner"
+				(shape circle)
+				(size 5 5)
+				(zone_connect -1)
+			)
+			(layer "B.Cu"
+				(shape circle)
+				(size 5 5)
 				(zone_connect -1)
 			)
 		)

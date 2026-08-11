@@ -219,7 +219,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -15.24 -2.54 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "UD–"
 					(effects
@@ -237,7 +237,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -15.24 -5.08 0)
+				(at -15.24 -2.54 0)
 				(length 2.54)
 				(name "UD+"
 					(effects
@@ -5336,6 +5336,186 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "SRU1038-101Y"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SRU1038-101Y"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:IND-SMD_L10.0-W10.0_SRU1038-100Y"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C6684389.pdf"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "BOURNS"
+			(at 0 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SRU1038-101Y"
+			(at 0 -15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C6684389"
+			(at 0 -17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SRU1038-101Y_0_1"
+			(arc
+				(start -4.06 0.01)
+				(mid -3.035 1.02)
+				(end -2.03 -0.01)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.03 0.01)
+				(mid -1.005 1.02)
+				(end 0 -0.01)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0.01)
+				(mid 1.025 1.02)
+				(end 2.03 -0.01)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 2.03 0.01)
+				(mid 3.055 1.02)
+				(end 4.06 -0.01)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 0 0)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 5.08 0 180)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "TYPEC-303-ACP16"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6033,6 +6213,207 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "XT30"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT30"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:CONN-TH_4P-XT30PW-M"
+			(at 0 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C19268030.pdf"
+			(at 0 -13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "AMASS(艾迈斯)"
+			(at 0 -16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "XT30PW(2+2)-M.G.B"
+			(at 0 -19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C19268030"
+			(at 0 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "plug"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "XT30_0_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 3.81 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center 0 5.08)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 3.81 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 1.27 0)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 -1.27 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 -3.81 0)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "XT60PW-F_C428722"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6626,97 +7007,506 @@
 		(embedded_fonts no)
 	)
 
-  (symbol "SRU1038-101Y"
+  (symbol "BSS138_C52895"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (property
       "Reference"
-      "L"
+      "Q"
+      (at 0 10.16 0)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Value"
+      "BSS138_C52895"
+      (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Footprint"
+      "specific-parts-lib:SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR"
+      (at 0 -12.70 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Datasheet"
+      "https://lcsc.com/product-detail/MOSFET_FAIRCHILD_BSS138_BSS138_C52895.html"
+      (at 0 -15.24 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Manufacturer"
+      "onsemi(安森美)"
+      (at 0 -17.78 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "MPN"
+      "BSS138"
+      (at 0 -20.32 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "LCSC Part"
+      "C52895"
+      (at 0 -22.86 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "ki_keywords"
+      "MOSFETs"
+      (at 0 -25.40 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (symbol "BSS138_C52895_0_1"
+      (polyline
+        (pts
+          (xy 0.00 1.78) (xy 2.54 1.78) (xy 2.54 2.54) (xy 5.08 2.54) (xy 5.08 0.51)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.00 -0.00) (xy 2.54 -0.00) (xy 2.54 -2.54) (xy 5.08 -2.54) (xy 5.08 -0.76)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 -1.78) (xy 0.00 -1.78)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -0.51 2.29) (xy -0.51 -2.29)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.00 2.29) (xy 0.00 1.27)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.00 -0.51) (xy 0.00 0.51)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.00 -2.29) (xy 0.00 -1.27)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 -0.00) (xy -0.51 -0.00)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 4.06 0.25) (xy 4.32 0.51) (xy 5.84 0.51) (xy 6.10 0.76)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.08 0.51) (xy 5.84 -0.76) (xy 4.32 -0.76) (xy 5.08 0.51)
+        )
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (polyline
+        (pts
+          (xy 0.00 -0.00) (xy 1.52 0.51) (xy 1.52 -0.51) (xy 0.00 -0.00)
+        )
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (pin unspecified line
+        (at 2.54 -5.08 90)
+        (length 2.54)
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -5.08 -0.00 0)
+        (length 2.54)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 2.54 5.08 270)
+        (length 2.54)
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+
+  (symbol "SM06B-SRSS-TB"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "U"
+      (at 0 16.51 0)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Value"
+      "SM06B-SRSS-TB"
+      (at 0 -16.51 0)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Footprint"
+      "specific-parts-lib:CONN-SMD_SM06B-SRSS-TB-LF-SN"
+      (at 0 -19.05 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Datasheet"
+      "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-SM06B-SRSS-TB-LF-SN_C160405.html"
+      (at 0 -21.59 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Manufacturer"
+      "JST"
+      (at 0 -24.13 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "MPN"
+      "SM06B-SRSS-TB(LF)(SN)"
+      (at 0 -26.67 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "LCSC Part"
+      "C160405"
+      (at 0 -29.21 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "ki_keywords"
+      "Wire To Board / Wire To Wire Connector"
+      (at 0 -31.75 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (symbol "SM06B-SRSS-TB_0_1"
+      (rectangle
+        (start -3.81 8.89)
+        (end 6.35 -8.89)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (circle
+        (center -2.54 7.62)
+        (radius 0.38)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line
+        (at -6.35 6.35 0)
+        (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 3.81 0)
+        (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 1.27 0)
+        (length 2.54)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 -1.27 0)
+        (length 2.54)
+        (name "4" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 -3.81 0)
+        (length 2.54)
+        (name "5" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 -6.35 0)
+        (length 2.54)
+        (name "6" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 3.81 -11.43 90)
+        (length 2.54)
+        (name "7" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 3.81 11.43 270)
+        (length 2.54)
+        (name "8" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+
+  (symbol "PA100V22M6X9"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "C"
       (at 0 5.08 0)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Value"
-      "SRU1038-101Y"
+      "PA100V22M6X9"
       (at 0 -5.08 0)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Footprint"
-      "specific-parts-lib:IND-SMD_L10.0-W10.0_SRU1038-100Y"
+      "specific-parts-lib:CAP-TH_BD6.3-P2.50-D0.6-FD"
       (at 0 -7.62 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C6684389.pdf"
+      "https://www.lcsc.com/datasheet/C49233038.pdf"
       (at 0 -10.16 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "BOURNS"
+      "JIERR(捷而瑞)"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "MPN"
-      "SRU1038-101Y"
+      "PA100V22M6X9"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "LCSC Part"
-      "C6684389"
+      "C49233038"
       (at 0 -17.78 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
-    (symbol "SRU1038-101Y_0_1"
+    (symbol "PA100V22M6X9_0_1"
       (arc
-        (start -2.03 -0.01)
-        (mid -3.04 1.02)
-        (end -4.06 0.01)
+        (start 1.15 1.79)
+        (mid 0.42 0.02)
+        (end 1.13 -1.75)
         (stroke (width 0) (type default))
         (fill (type none))
       )
-      (arc
-        (start 0.00 -0.01)
-        (mid -1.01 1.02)
-        (end -2.03 0.01)
+      (polyline
+        (pts
+          (xy -0.51 1.78) (xy -0.51 -1.78)
+        )
         (stroke (width 0) (type default))
         (fill (type none))
       )
-      (arc
-        (start 4.06 -0.01)
-        (mid 3.05 1.02)
-        (end 2.03 0.01)
+      (polyline
+        (pts
+          (xy -2.54 -0.00) (xy -0.51 -0.00)
+        )
         (stroke (width 0) (type default))
         (fill (type none))
       )
-      (arc
-        (start 2.03 -0.01)
-        (mid 1.02 1.02)
-        (end 0.00 0.01)
+      (polyline
+        (pts
+          (xy 0.51 -0.00) (xy 2.54 -0.00)
+        )
         (stroke (width 0) (type default))
         (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.29 1.27) (xy -1.27 1.27)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.78 1.78) (xy -1.78 0.76)
+        )
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin input line
+        (at -5.08 -0.00 0)
+        (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line
+        (at 5.08 -0.00 180)
+        (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+
+  (symbol "BM06B-SRSS-TB"
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "U"
+      (at 0 11.43 0)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Value"
+      "BM06B-SRSS-TB"
+      (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Footprint"
+      "specific-parts-lib:CONN-SMD-6P-P1.00_BM06B-SRSS-TB-LF-SN"
+      (at 0 -11.43 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Datasheet"
+      "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-BM06B-SRSS-TB-LF-SN_C160392.html"
+      (at 0 -13.97 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "Manufacturer"
+      "JST"
+      (at 0 -16.51 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "MPN"
+      "BM06B-SRSS-TB(LF)(SN)"
+      (at 0 -19.05 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "LCSC Part"
+      "C160392"
+      (at 0 -21.59 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (property
+      "ki_keywords"
+      "Wire To Board / Wire To Wire Connector"
+      (at 0 -24.13 0)
+      (hide yes)
+      (effects (font (size 1.27 1.27) ))
+    )
+    (symbol "BM06B-SRSS-TB_0_1"
+      (rectangle
+        (start -8.89 1.27)
+        (end 8.89 -6.35)
+        (stroke (width 0) (type default))
+        (fill (type background))
       )
       (pin unspecified line
-        (at 5.08 -0.00 180)
-        (length 1.27)
+        (at -6.35 6.35 270)
+        (length 5.08)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 6.35 270)
+        (length 5.08)
         (name "2" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
       )
       (pin unspecified line
-        (at -5.08 -0.00 0)
-        (length 1.27)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
+        (at -1.27 6.35 270)
+        (length 5.08)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 1.27 6.35 270)
+        (length 5.08)
+        (name "4" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 3.81 6.35 270)
+        (length 5.08)
+        (name "5" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 6.35 6.35 270)
+        (length 5.08)
+        (name "6" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 -3.81 180)
+        (length 5.08)
+        (name "7" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -13.97 -3.81 0)
+        (length 5.08)
+        (name "8" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
       )
     )
   )
