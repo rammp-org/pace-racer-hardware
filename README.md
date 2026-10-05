@@ -1,6 +1,8 @@
-# Kicad Hardware files and docs for the PACE V0 board (RACER)
+# PACE Racer motor controller (KiCad hardware)
 Welcome to the official hardware repository for the **PACE V0 (RACER)** motor controller board. This repository contains all KiCad design schematics, layout files, and hardware documentation required to manufacture, test, and interface with the RACER platform. 
 The companion firmware for this board is under active development in the companion repository: `pace-racer-firmware`.
+
+**How this repo works:** humans commit KiCad sources; CI (KiBot) runs ERC and DRC on every PR and builds gerbers, BOM, position, ibom, PDFs, STEP and renders. Tagging `VnRm` publishes those as a GitHub Release. See `docs/style-guide.md` for conventions and `docs/decisions/` for the why behind unusual choices.
 <div align="center">
 <img width="1050" height="750" alt="PaceRacerV0R1 Splash2" src="https://github.com/user-attachments/assets/96b0adf5-5786-436b-93e1-1e5da7add888" />
 
@@ -66,51 +68,61 @@ flowchart TD
 ### 2. Sensor Framework
 * **Rotor Position Feedback**: Supports dual encoder paradigms:
   * High-speed SPI telemetry via the MT6701 Magnetic Rotary Encoder interface.
-  * Discrete input lines for standard 3-phase Hall effect sensor elements (`A-halls`, `B-Halls`, `C-Halls`).
+  * Discrete input lines for standard 3-phase Hall effect sensor elements (`hall-a`, `hall-b`, `hall-c`).
 * **Thermal Management**: 4x LM75ADP I2C digital temperature monitors are distributed across key thermal zones on a single I2C bus. Fixed hardware addressing assigns them respectively to `0x4C`, `0x4D`, `0x4E`, and `0x4F`.
 
 ### 3. Communications & Safety
 * **Wired Networking**: A Wiznet W5500 Ethernet Coprocessor configuration allows stable, high-throughput network communication over a shared high-speed SPI bus.
-* **Galvanic Isolation**: The upstream USB-C debugging connection features an ADUM3160BRWZ-RL digital isolation chip to safely separate logic lines from high-voltage battery transient grounds (`GNDPWR`) during live tuning.
+* **Galvanic Isolation**: The upstream USB-C debugging connection features an ADUM3160BRWZ-RL digital isolation chip to safely separate logic lines from high-voltage battery transient grounds (see `docs/decisions/0001-ground-domains.md`) during live tuning.
 
 ---
 
 ## Hardware Pin Mapping Reference
 
-This register map serves as the single source of truth for constructing your firmware's hardware abstraction layer (e.g., `hal_pins.h`).
+This table is generated from the schematic netlist by `tools/gen_readme.py` and checked in CI. Do not edit it by hand.
+Net names follow `docs/style-guide.md` (lowercase domain-kebab); the firmware `hal_pins.h` should use these names.
 
-| ESP32-S3 Pin | Schematic Net Name | Destination Peripheral | Description / Implementation Guidance |
-| :--- | :--- | :--- | :--- |
-| **IO1 / ADC1_0** | `1V6-REF` | Internal ADC / Bias Reference | Monitors the 1.6V current-shunt offset reference voltage. |
-| **IO4 / ADC1_3** | `A-isense` | Phase A Shunt Amplifier | Low-side shunt analog current feedback input. |
-| **IO5 / ADC1_4** | `B-isense` | Phase B Shunt Amplifier | Low-side shunt analog current feedback input. |
-| **IO6 / ADC1_5** | `C-isense` | Phase C Shunt Amplifier | Low-side shunt analog current feedback input. |
-| **IO8 / ADC1_7** | `A-high` | DRV8353 INHA (`Pin 32`) | PWM Output: Phase A High-Side Switching. |
-| **IO18** | `A-low` | DRV8353 INLA (`Pin 33`) | PWM Output: Phase A Low-Side Switching. |
-| **IO17** | `B-high` | DRV8353 INHB (`Pin 34`) | PWM Output: Phase B High-Side Switching. |
-| **IO16** | `B-low` | DRV8353 INLB (`Pin 35`) | PWM Output: Phase B Low-Side Switching. |
-| **IO15** | `C-high` | DRV8353 INHC (`Pin 36`) | PWM Output: Phase C High-Side Switching. |
-| **IO7 / ADC1_6** | `C-low` | DRV8353 INLC (`Pin 37`) | PWM Output: Phase C Low-Side Switching. |
-| **IO19 / USBD-** | `usb_d-` | ADUM3160 Isolated Port | Hardware Native USB- Data Line. |
-| **IO20 / USBD+** | `usb_d+` | ADUM3160 Isolated Port | Hardware Native USB+ Data Line. |
-| **IO40** | `motor-fault` | DRV8353 nFAULT (`Pin 26`) | Active-Low Fault Input Interrupt (10k pull-up). |
-| **IO39** | `drv-spi-cs` | DRV8353 nSCS (`Pin 30`) | Dedicated SPI Chip Select for Gate Driver configuration. |
-| **IO38** | `enc-spi-cs` | MT6701 Encoder Port | Dedicated SPI Chip Select for Magnetic Encoder. |
-| **IO37** | `enc-spi-clk` | MT6701 Encoder Port | Dedicated SPI Clock Line for Magnetic Encoder. |
-| **IO35** | `enc-spi-cipo` | MT6701 Encoder Port | SPI Master In / Slave Out data from Encoder. |
-| **IO45 / SPI-V** | `12c-SDA` | Local Temperature Sensors | Shared I2C Data Line (10k external pull-up). |
-| **IO48** | `12c-SCL` | Local Temperature Sensors | Shared I2C Clock Line (10k external pull-up). |
-| **IO10 / FSPI-CS** | `comm-spi-cs` | W5500 Ethernet Coprocessor | Dedicated SPI Chip Select for Ethernet Controller. |
-| **IO12 / FSPI-CLK** | `comm-spi-clk` | W5500 Ethernet / DRV8353 | Shared High-Speed Communications SPI Clock. |
-| **IO11 / FSPI-D** | `comm-spi-copi` | W5500 Ethernet / DRV8353 | Shared High-Speed Communications SPI MOSI. |
-| **IO13 / FSPI-Q** | `comm-spi-cipo` | W5500 Ethernet / DRV8353 | Shared High-Speed Communications SPI MISO. |
-| **IO14** | `comm-irq` | W5500 Ethernet Controller | Hardware Event Line Input Interrupt. |
-| **IO21** | `comm-reset` | W5500 Ethernet Controller | Hardware Device Reset Control Line. |
-| **IO3 / ADC1-2** | `A-halls` | Hall Sensor Input Header | Discrete Input Phase A Hall Effect (10k pull-up). |
-| **IO46** | `B-Halls` | Hall Sensor Input Header | Discrete Input Phase B Hall Effect (10k pull-up). |
-| **IO9 / ADC1-8** | `C-Halls` | Hall Sensor Input Header | Discrete Input Phase C Hall Effect (10k pull-up). |
-| **IO42** | `blue-ind` | Diagnostic LED Blue | Hardware status indicator light. |
-| **IO41** | `green-ind` | Diagnostic LED Green | Hardware status indicator light. |
+<!-- BEGIN GENERATED: pinmap -->
+| MCU pin | Net | Connected to |
+| :-- | :-- | :-- |
+| IO0/st-boot (pin 27) | `mcu-boot` | R8, SW1 |
+| RXD0 (pin 36) | `uart-rx` | J4 |
+| TXD0 (pin 37) | `uart-tx` | J4 |
+| IO1/adc1-0 (pin 39) | `vref-1v6` | C23, C27, TP24, U2, U7 |
+| IO2/adc1-1 (pin 38) | `mcu-io2` | J4 |
+| IO3/st-jtag/adc1-2 (pin 15) | `hall-a` | C42, R34 |
+| IO4/adc1-3 (pin 4) | `isense-a` | C30, R10 |
+| IO5/adc1-4 (pin 5) | `isense-b` | C29, R21 |
+| IO6/adc1-5 (pin 6) | `isense-c` | C28, R22 |
+| IO7/adc1-6 (pin 7) | `pwm-c-low` | R26, U2 |
+| IO8/adc1-7 (pin 12) | `pwm-a-high` | R31, U2 |
+| IO9/adc1-8 (pin 17) | `hall-c` | C40, R25 |
+| IO10/adc1-9/FSPI-CS (pin 18) | `eth-spi-cs` | J2, R23 |
+| IO11/FSPI-D (pin 19) | `spi-copi` | J2, U2 |
+| IO12/FSPI-CLK (pin 20) | `spi-clk` | J2, U2 |
+| IO13/FSPI-Q (pin 21) | `spi-cipo` | J2, R17, U2 |
+| IO14 (pin 22) | `eth-irq` | J2 |
+| IO15 (pin 8) | `pwm-c-high` | R27, U2 |
+| IO16 (pin 9) | `pwm-b-low` | R28, U2 |
+| IO17 (pin 10) | `pwm-b-high` | R29, U2 |
+| IO18 (pin 11) | `pwm-a-low` | R30, U2 |
+| IO19/USBD- (pin 13) | `usb-dm` | U4 |
+| IO20/USBD+ (pin 14) | `usb-dp` | U4 |
+| IO21 (pin 23) | `eth-reset` | J2 |
+| IO35 (pin 28) | `enc-spi-cipo` | U12 |
+| IO36 (pin 29) | `enc-spi-copi` | J4, U12 |
+| IO37 (pin 30) | `enc-spi-clk` | U12 |
+| IO38 (pin 31) | `enc-spi-cs` | R24, U12 |
+| IO39 (pin 32) | `drv-spi-cs` | U2 |
+| IO40 (pin 33) | `drv-fault` | R16, U2 |
+| IO41 (pin 34) | `led-green` | D2, J4 |
+| IO42 (pin 35) | `led-blue` | D1, J4 |
+| IO45/st-spi-v (pin 26) | `i2c-sda` | J4, R39, U10, U11, U8, U9 |
+| IO46/st-rom (pin 16) | `hall-b` | C41, R33 |
+| IO47 (pin 24) | `drv-enable` | R32, U2 |
+| IO48 (pin 25) | `i2c-scl` | J4, R40, U10, U11, U8, U9 |
+| EN (pin 3) | `mcu-reset` | R9, SW2 |
+<!-- END GENERATED: pinmap -->
 
 ---
 
@@ -121,7 +133,7 @@ The RACER PCB layout handles standard heavy industrial current loops alongside s
 * **Main DC Power Stage Input (`+BATT`)**: Accepts high-voltage input up to 60V DC. High and low-frequency buffer capacitor banks are placed immediately across each half-bridge phase to suppress heavy inductive switching ripples up to 25MHz.
 * **Logic Subsystem Buck (5V Rail)**: Driven by an XL7015E1 high-voltage buck regulator topology, dropping the high-voltage input down to a common local 5V line.
 * **Microcontroller Supply (3.3V Rail)**: An AMS1117-3.3 linear regulator drops the local 5V line to a stable 3.3V rail dedicated to powering the ESP32-S3 and onboard sensors.
-* **Analog Ingestion Bias Reference (`1V6-REF`)**: Formed via a REF35160QDBVR high-precision reference generator connected to the 5V line. This outputs a fixed 1.6V reference bias to calibrate the inline current shunt amplifiers, permitting measurement of negative and positive phase currents across the full bi-directional stroke.
+* **Analog Ingestion Bias Reference (`vref-1v6`)**: Formed via a REF35160QDBVR high-precision reference generator connected to the 5V line. This outputs a fixed 1.6V reference bias to calibrate the inline current shunt amplifiers, permitting measurement of negative and positive phase currents across the full bi-directional stroke.
 * **Isolation Boundary Notice**: The 5V-USB rail is strictly limited to powering the upstream digital isolator components. Flipping the physical isolation switch (`SW3`) cleanly detaches the target ground (`GND`) from development computer USB shields (`GND-USB`) to protect computer infrastructure against high-power faults.
 
 ---
@@ -136,12 +148,12 @@ To quickly bring up prototype firmware on `pace-racer-firmware`, organize your d
 3. Fire up the shared I2C bus over `IO45` and `IO48` to loop and register responses from the four LM75ADP temperature sensor configurations at addresses `0x4C` through `0x4F`. 
 
 ### Phase 2: Inverter Protection & Commutation Interfaces
-1. Configure `IO40` (`motor-fault`) as an active-low hardware interrupt line. Ensure its handler instantly forces all PWM generation lines into a low (disabled) safety state if triggered.
-2. Initialize the main SPI communications bus over pins `IO11`, `IO12`, and `IO13`. Pull the gate driver chip select (`IO39`) low to configure the DRV8353 operational state registers.
+1. Configure `IO40` (`drv-fault`) as an active-low hardware interrupt line. Ensure its handler instantly forces all PWM generation lines into a low (disabled) safety state if triggered.
+2. Initialize the main SPI communications bus over pins `spi-copi`, `spi-clk`, and `spi-cipo`. Pull the gate driver chip select (`IO39`) low to configure the DRV8353 operational state registers.
 3. For **Field-Oriented Control (FOC)**, configure high-speed SPI capture over the encoder subsystem (`IO35`, `IO37`, `IO38`) to decode magnetic orientation data from the MT6701.
 4. For **Trapezoidal Commutation**, establish change-of-state interrupt routines tracking discrete pin changes across Hall effect inputs (`IO3`, `IO46`, `IO9`).
 
 ### Phase 3: Ethernet Networking
 1. Cycle the hardware reset pin `IO21` to clear the internal registers of the W5500 Ethernet chip.
 2. Configure SPI tracking over the controller chip select pin `IO10`.
-3. Initialize the raw sockets over network stacks using the standard `comm-irq` (`IO14`) interrupt pin to manage incoming and outgoing network interface events without blocking the high-frequency motor control loops.
+3. Initialize the raw sockets over network stacks using the standard `eth-irq` (`IO14`) interrupt pin to manage incoming and outgoing network interface events without blocking the high-frequency motor control loops.

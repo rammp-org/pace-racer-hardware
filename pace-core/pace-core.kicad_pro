@@ -65,48 +65,7 @@
           "width": 0.12
         }
       ],
-      "drc_exclusions": [
-        [
-          "clearance|138641759|112841688|0f340305-0719-439f-bb4c-6f5bee5cbdfe|9c987c52-b38b-4588-9e28-48d478aa9314",
-          "Artifact of nettie useage"
-        ],
-        [
-          "clearance|145500000|110800000|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|56afd788-6014-46fa-ba41-129feea25a0b",
-          "Artifact of nettie useage"
-        ],
-        [
-          "clearance|175582280|103226052|5964952b-d532-474d-9e48-fbb88052ff8a|f4d57dfb-92ac-4ca3-bffa-3530172b1ac8",
-          "Nettie artifact"
-        ],
-        [
-          "shorting_items|138677660|112877590|63acf3fd-35da-4e31-b7f6-fb2d38412379|9c987c52-b38b-4588-9e28-48d478aa9314",
-          "Artifact of nettie useage"
-        ],
-        [
-          "shorting_items|139879741|111675509|63acf3fd-35da-4e31-b7f6-fb2d38412379|3445b262-634e-4f21-a7fb-8e29ebc668eb",
-          "Nettie artifact"
-        ],
-        [
-          "shorting_items|145096747|112492510|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|37e417c1-99b0-44aa-a6bd-1e931c91db62",
-          "Nettie artifact"
-        ],
-        [
-          "shorting_items|145096747|114192510|435d416b-5438-4a5d-86d6-56f8c3d0e0a4|f402972f-bf20-457d-8ecb-65a62809039c",
-          "Artifact of nettie useage"
-        ],
-        [
-          "shorting_items|172933321|101072067|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|cdbff16e-6a5f-4b18-b4c2-2391d3fc35cd",
-          "Artifact of nettie useage"
-        ],
-        [
-          "shorting_items|173101127|100904260|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|f4d57dfb-92ac-4ca3-bffa-3530172b1ac8",
-          "Artifact of nettie useage"
-        ],
-        [
-          "shorting_items|174135402|102274148|60188a9e-fb4a-4dd3-9282-bc0a0ac86464|cdbff16e-6a5f-4b18-b4c2-2391d3fc35cd",
-          "Nettie artifact"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -592,104 +551,161 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "bus_width": 10,
+        "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgb(223, 108, 140)",
+        "track_width": 0.3556,
         "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 10
       },
       {
-        "bus_width": 10,
+        "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 4,
         "schematic_color": "rgb(224, 134, 0)",
+        "track_width": 0.3556,
         "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 10
       },
       {
+        "bus_width": 12,
         "clearance": 0.2,
-        "name": "A-motor",
-        "pcb_color": "rgb(255, 238, 101)",
-        "priority": 2,
-        "schematic_color": "rgb(215, 194, 0)",
-        "tuning_profile": "",
-        "wire_width": 25
-      },
-      {
-        "clearance": 0.2,
-        "name": "B-motor",
-        "pcb_color": "rgb(79, 224, 109)",
-        "priority": 1,
-        "schematic_color": "rgb(0, 155, 0)",
-        "tuning_profile": "",
-        "wire_width": 25
-      },
-      {
-        "bus_width": 20,
-        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "Batt",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 2,
         "schematic_color": "rgb(255, 0, 0)",
+        "track_width": 1.0,
         "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 20
       },
       {
+        "bus_width": 12,
         "clearance": 0.2,
-        "name": "C-motor",
-        "pcb_color": "rgb(98, 228, 255)",
-        "priority": 0,
-        "schematic_color": "rgb(0, 52, 255)",
-        "track_width": 0.6,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "wire_width": 25
-      },
-      {
-        "bus_width": 10,
-        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 6,
         "schematic_color": "rgb(0, 0, 0)",
+        "track_width": 0.3556,
         "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 10
       },
       {
-        "bus_width": 10,
+        "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "GND-USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgb(19, 104, 212)",
+        "track_width": 0.3556,
         "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 15
       },
       {
-        "bus_width": 20,
+        "bus_width": 12,
         "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
         "line_style": 0,
-        "name": "High-Current-GND",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 8,
-        "schematic_color": "rgb(97, 52, 161)",
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Motor-A",
+        "pcb_color": "rgb(255, 238, 101)",
+        "priority": 0,
+        "schematic_color": "rgb(215, 194, 0)",
+        "track_width": 1.0,
         "tuning_profile": "",
-        "wire_width": 20
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 25
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Motor-B",
+        "pcb_color": "rgb(79, 224, 109)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 155, 0)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 25
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Motor-C",
+        "pcb_color": "rgb(98, 228, 255)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 52, 255)",
+        "track_width": 1.0,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 25
       }
     ],
     "meta": {
@@ -708,7 +724,7 @@
         "+5V-USB"
       ],
       "GND": [
-        "High-Current-GND"
+        "GND"
       ],
       "src-NA": [
         "High-Current-GND"
@@ -724,6 +740,10 @@
         "pattern": "+5V"
       },
       {
+        "netclass": "5V",
+        "pattern": "+5V-USB"
+      },
+      {
         "netclass": "3V3",
         "pattern": "+3V3"
       },
@@ -732,24 +752,20 @@
         "pattern": "GND"
       },
       {
-        "netclass": "High-Current-GND",
-        "pattern": "GND-HC"
-      },
-      {
         "netclass": "GND-USB",
         "pattern": "GND-USB"
       },
       {
-        "netclass": "A-motor",
-        "pattern": "A-motor"
+        "netclass": "Motor-A",
+        "pattern": "mot-a"
       },
       {
-        "netclass": "B-motor",
-        "pattern": "B-motor"
+        "netclass": "Motor-B",
+        "pattern": "mot-b"
       },
       {
-        "netclass": "C-motor",
-        "pattern": "C-motor"
+        "netclass": "Motor-C",
+        "pattern": "mot-c"
       }
     ]
   },
@@ -830,43 +846,89 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_Part_Number",
+          "name": "LCSC_Part_Number",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field4",
+          "name": "Field4",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Footprint"
     },
     "bus_aliases": {
       "half-bridge-control-signals": [
-        "gate-HA",
-        "src-HA",
-        "gate-LA",
-        "src-PA",
-        "src-NB",
-        "src-PB",
-        "gate-LB",
-        "src-HB",
-        "gate-HB",
-        "gate-HC",
-        "src-NA"
+        "gate-a-high",
+        "gate-a-low",
+        "gate-b-high",
+        "gate-b-low",
+        "gate-c-high",
+        "gate-c-low",
+        "mot-a",
+        "mot-b",
+        "mot-c",
+        "shunt-a-n",
+        "shunt-a-p",
+        "shunt-b-n",
+        "shunt-b-p",
+        "shunt-c-n",
+        "shunt-c-p"
       ],
       "mc-isense": [
-        "A-isense",
-        "B-isense",
-        "C-isense"
+        "isense-a",
+        "isense-b",
+        "isense-c"
       ],
       "mc-pwm": [
-        "A-high",
-        "A-low",
-        "B-high",
-        "B-low",
-        "C-high",
-        "C-low",
-        "MC-enable"
+        "pwm-a-high",
+        "pwm-a-low",
+        "pwm-b-high",
+        "pwm-b-low",
+        "pwm-c-high",
+        "pwm-c-low",
+        "drv-enable"
       ]
     },
     "connection_grid_size": 50.0,
@@ -909,7 +971,7 @@
         "uuid": "a993745c-3062-41b3-ae55-cf32fb6be737"
       }
     ],
-    "used_designators": "JP4-5,#PWR11,#PWR75,#PWR91-92,#PWR98-100,R25,R33-34,C40-42",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -934,7 +996,12 @@
       "Gate Driver and Half Bridges"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "COMPANY": "RAMMP",
+    "PROJECT_CODE": "PACE-RACER",
+    "REV": "V1R2",
+    "TITLE": "PACE Racer"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

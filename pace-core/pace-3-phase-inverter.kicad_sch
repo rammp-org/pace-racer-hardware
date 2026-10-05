@@ -4,7 +4,130 @@
 	(generator_version "10.0")
 	(uuid "ba055387-a8a5-4847-9cc5-f6b87792ef79")
 	(paper "A4")
+	(title_block
+		(title "${TITLE} - Gate Driver and Half Bridges")
+		(date "2026-09-30")
+		(rev "${REV}")
+		(company "${COMPANY}")
+		(comment 1 "DRV8353 gate driver, 3x half-bridge, low-side shunts")
+		(comment 2 "Project code ${PROJECT_CODE}")
+	)
 	(lib_symbols
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
@@ -868,7 +991,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "aaa-pace-project-specific:DRV8353SRTAT"
+		(symbol "specific-parts-lib:DRV8353SRTAT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5177,7 +5300,7 @@
 		)
 		(uuid "fffb566d-5703-4a65-b36f-e780ab0c4109")
 	)
-	(label "pwm.MC-enable"
+	(label "pwm.drv-enable"
 		(at 38.1 50.8 0)
 		(effects
 			(font
@@ -5187,7 +5310,7 @@
 		)
 		(uuid "018826d7-de01-4a1a-9d73-4253d50fb55a")
 	)
-	(label "pwm.B-low"
+	(label "pwm.pwm-b-low"
 		(at 38.1 40.64 0)
 		(effects
 			(font
@@ -5197,7 +5320,7 @@
 		)
 		(uuid "0872d96f-7474-46e3-ab36-c64933ce112e")
 	)
-	(label "src-PB"
+	(label "shunt-b-p"
 		(at 118.11 55.88 180)
 		(effects
 			(font
@@ -5207,7 +5330,7 @@
 		)
 		(uuid "08cdfd83-b0dc-4801-ba09-b3273f3384bd")
 	)
-	(label "gate-HA"
+	(label "gate-a-high"
 		(at 132.08 85.09 0)
 		(effects
 			(font
@@ -5217,7 +5340,7 @@
 		)
 		(uuid "0b1c63d9-cc00-405d-a977-86d15c2fecb5")
 	)
-	(label "src-NB"
+	(label "shunt-b-n"
 		(at 118.11 53.34 180)
 		(effects
 			(font
@@ -5227,18 +5350,33 @@
 		)
 		(uuid "16585362-f0b4-4837-962e-b070b80af5cb")
 	)
-	(label "src-HA"
+	(global_label "mot-a"
+		(shape input)
 		(at 118.11 43.18 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 0 1)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify right bottom)
+			(justify right)
 		)
 		(uuid "16d53988-67b8-4f15-9f54-d655023a6aa6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(label "pwm.B-high"
+	(label "pwm.pwm-b-high"
 		(at 38.1 43.18 0)
 		(effects
 			(font
@@ -5248,7 +5386,7 @@
 		)
 		(uuid "198e0539-2ca3-498f-8524-5309e6fff099")
 	)
-	(label "gate-LA"
+	(label "gate-a-low"
 		(at 134.62 101.6 0)
 		(effects
 			(font
@@ -5258,7 +5396,7 @@
 		)
 		(uuid "1cb58a71-2c71-4a42-8369-94832ee16557")
 	)
-	(label "gate-HC"
+	(label "gate-c-high"
 		(at 118.11 66.04 180)
 		(effects
 			(font
@@ -5268,7 +5406,7 @@
 		)
 		(uuid "296ab5d5-658a-406b-8550-77d0361b6b06")
 	)
-	(label "src-PB"
+	(label "shunt-b-p"
 		(at 185.42 113.03 0)
 		(effects
 			(font
@@ -5278,7 +5416,7 @@
 		)
 		(uuid "2a7a5846-3555-48dd-a0ab-a6460b4d3835")
 	)
-	(label "shunts.A-isense"
+	(label "shunts.isense-a"
 		(at 38.1 53.34 0)
 		(effects
 			(font
@@ -5288,7 +5426,7 @@
 		)
 		(uuid "42fc9172-3e43-4f3d-b1fc-4c9f3ecbb59e")
 	)
-	(label "gate-HA"
+	(label "gate-a-high"
 		(at 118.11 40.64 180)
 		(effects
 			(font
@@ -5298,29 +5436,59 @@
 		)
 		(uuid "431158d9-8b59-4fb3-9db6-8be79aabeaa8")
 	)
-	(label "src-HB"
+	(global_label "mot-b"
+		(shape input)
 		(at 118.11 60.96 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 0 1)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify right bottom)
+			(justify right)
 		)
 		(uuid "451293d2-6dda-4d59-800f-1e004cfe6904")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(label "src-HC"
+	(global_label "mot-c"
+		(shape input)
 		(at 240.03 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 0 1)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "497af277-4f49-4bfe-8094-00c52fe88825")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "pwm.A-low"
+	(label "pwm.pwm-a-low"
 		(at 38.1 45.72 0)
 		(effects
 			(font
@@ -5340,7 +5508,7 @@
 		)
 		(uuid "5efd8dcc-c0da-4489-9537-eecc17e7ecde")
 	)
-	(label "gate-LB"
+	(label "gate-b-low"
 		(at 185.42 101.6 0)
 		(effects
 			(font
@@ -5350,7 +5518,7 @@
 		)
 		(uuid "63226f5e-76a5-416e-91f6-de62754bdbe8")
 	)
-	(label "src-NC"
+	(label "shunt-c-n"
 		(at 240.03 121.92 0)
 		(effects
 			(font
@@ -5360,18 +5528,33 @@
 		)
 		(uuid "70326e17-113b-482f-8520-a676ad27a4e1")
 	)
-	(label "src-HA"
+	(global_label "mot-a"
+		(shape input)
 		(at 132.08 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 0 1)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "7a713515-aa59-41b6-b030-7422b6a4a571")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "src-PC"
+	(label "shunt-c-p"
 		(at 240.03 113.03 0)
 		(effects
 			(font
@@ -5381,7 +5564,7 @@
 		)
 		(uuid "83fd3b5b-20e3-405e-8131-b9a3e06272ff")
 	)
-	(label "pwm.C-high"
+	(label "pwm.pwm-c-high"
 		(at 38.1 38.1 0)
 		(effects
 			(font
@@ -5391,7 +5574,7 @@
 		)
 		(uuid "8b8bf094-a426-4eda-b21e-8178bee99816")
 	)
-	(label "src-PA"
+	(label "shunt-a-p"
 		(at 132.08 113.03 0)
 		(effects
 			(font
@@ -5401,7 +5584,7 @@
 		)
 		(uuid "8ddffe10-a5ab-4902-aead-8952a6eed21c")
 	)
-	(label "shunts.B-isense"
+	(label "shunts.isense-b"
 		(at 38.1 55.88 0)
 		(effects
 			(font
@@ -5411,7 +5594,7 @@
 		)
 		(uuid "aef04197-ae43-4ef8-ac5d-baf17b70733e")
 	)
-	(label "src-PA"
+	(label "shunt-a-p"
 		(at 118.11 48.26 180)
 		(effects
 			(font
@@ -5421,7 +5604,7 @@
 		)
 		(uuid "b6e6aef7-4ede-4561-804e-61ec9415f06e")
 	)
-	(label "src-NC"
+	(label "shunt-c-n"
 		(at 118.11 76.2 180)
 		(effects
 			(font
@@ -5431,7 +5614,7 @@
 		)
 		(uuid "ba7a4c5c-1b2a-4929-a400-32db81d6e3e5")
 	)
-	(label "gate-HB"
+	(label "gate-b-high"
 		(at 185.42 85.09 0)
 		(effects
 			(font
@@ -5441,7 +5624,7 @@
 		)
 		(uuid "bb931201-620c-4b4a-901f-aefec5387ab5")
 	)
-	(label "src-NA"
+	(label "shunt-a-n"
 		(at 132.08 121.92 0)
 		(effects
 			(font
@@ -5451,7 +5634,7 @@
 		)
 		(uuid "bc61fab0-39d8-4ad1-beea-32c00b3f8fd5")
 	)
-	(label "gate-LB"
+	(label "gate-b-low"
 		(at 118.11 58.42 180)
 		(effects
 			(font
@@ -5461,7 +5644,7 @@
 		)
 		(uuid "c4429dda-eb6c-443d-af78-094265543fbc")
 	)
-	(label "src-PC"
+	(label "shunt-c-p"
 		(at 118.11 73.66 180)
 		(effects
 			(font
@@ -5471,7 +5654,7 @@
 		)
 		(uuid "c8794752-831f-4ae8-b2b0-4cd39ca6dfd5")
 	)
-	(label "gate-HB"
+	(label "gate-b-high"
 		(at 118.11 63.5 180)
 		(effects
 			(font
@@ -5481,7 +5664,7 @@
 		)
 		(uuid "ccf8cda5-f91f-47d0-9c6f-bd71e058c2df")
 	)
-	(label "gate-HC"
+	(label "gate-c-high"
 		(at 240.03 85.09 0)
 		(effects
 			(font
@@ -5491,7 +5674,7 @@
 		)
 		(uuid "d0b18ae2-63cb-416b-936c-7d5e013ac676")
 	)
-	(label "src-NA"
+	(label "shunt-a-n"
 		(at 118.11 50.8 180)
 		(effects
 			(font
@@ -5501,18 +5684,33 @@
 		)
 		(uuid "e08585a7-da1d-4c2e-aaa7-d4a92d81ed11")
 	)
-	(label "src-HB"
+	(global_label "mot-b"
+		(shape input)
 		(at 185.42 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 0 1)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "e276f79d-6537-454e-93b4-bc2aa7fa1c18")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.42 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
-	(label "pwm.A-high"
+	(label "pwm.pwm-a-high"
 		(at 38.1 48.26 0)
 		(effects
 			(font
@@ -5522,7 +5720,7 @@
 		)
 		(uuid "e57981ba-d618-4e47-a0fd-50b859480b15")
 	)
-	(label "pwm.C-low"
+	(label "pwm.pwm-c-low"
 		(at 38.1 35.56 0)
 		(effects
 			(font
@@ -5532,7 +5730,7 @@
 		)
 		(uuid "e8403d1e-64f0-4011-af19-2032f062a0d4")
 	)
-	(label "src-NB"
+	(label "shunt-b-n"
 		(at 185.42 121.92 0)
 		(effects
 			(font
@@ -5542,7 +5740,7 @@
 		)
 		(uuid "efb565bb-6b07-42e9-aa62-357bc93a2687")
 	)
-	(label "gate-LC"
+	(label "gate-c-low"
 		(at 240.03 101.6 0)
 		(effects
 			(font
@@ -5552,7 +5750,7 @@
 		)
 		(uuid "f0a2da4f-5acf-4786-ae0a-938ef78efa32")
 	)
-	(label "shunts.C-isense"
+	(label "shunts.isense-c"
 		(at 38.1 58.42 0)
 		(effects
 			(font
@@ -5562,7 +5760,7 @@
 		)
 		(uuid "fb6c5888-2e32-40bc-a53e-4bfa4537a322")
 	)
-	(label "gate-LA"
+	(label "gate-a-low"
 		(at 118.11 45.72 180)
 		(effects
 			(font
@@ -5572,18 +5770,33 @@
 		)
 		(uuid "fd635d37-e638-49ef-88db-c4ea3a85dd27")
 	)
-	(label "src-HC"
+	(global_label "mot-c"
+		(shape input)
 		(at 118.11 68.58 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 0 0 1)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify right bottom)
+			(justify right)
 		)
 		(uuid "fd866013-159f-4015-add1-50abbdbe9cc5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(label "gate-LC"
+	(label "gate-c-low"
 		(at 118.11 71.12 180)
 		(effects
 			(font
@@ -5593,7 +5806,7 @@
 		)
 		(uuid "ff2c730d-cad9-4ccb-a4f9-36e7f6b5507b")
 	)
-	(global_label "B-motor"
+	(global_label "mot-b"
 		(shape input)
 		(at 215.9 129.54 0)
 		(fields_autoplaced yes)
@@ -5620,7 +5833,7 @@
 			)
 		)
 	)
-	(global_label "C-motor"
+	(global_label "mot-c"
 		(shape input)
 		(at 269.24 129.54 0)
 		(fields_autoplaced yes)
@@ -5647,7 +5860,7 @@
 			)
 		)
 	)
-	(global_label "A-motor"
+	(global_label "mot-a"
 		(shape input)
 		(at 162.56 129.54 0)
 		(fields_autoplaced yes)
@@ -5674,7 +5887,7 @@
 			)
 		)
 	)
-	(global_label "1V6-REF"
+	(global_label "vref-1v6"
 		(shape input)
 		(at 73.66 111.76 180)
 		(fields_autoplaced yes)
@@ -5698,7 +5911,7 @@
 			)
 		)
 	)
-	(hierarchical_label "motor-fault"
+	(hierarchical_label "drv-fault"
 		(shape output)
 		(at 45.72 106.68 180)
 		(effects
@@ -5709,7 +5922,7 @@
 		)
 		(uuid "267453eb-b308-455f-8646-88dc6bc80999")
 	)
-	(hierarchical_label "comm-spi-clk"
+	(hierarchical_label "spi-clk"
 		(shape input)
 		(at 45.72 99.06 180)
 		(effects
@@ -5720,7 +5933,7 @@
 		)
 		(uuid "371155c9-a62c-4d76-a4ea-5ba344c54e6d")
 	)
-	(hierarchical_label "comm-spi-copi"
+	(hierarchical_label "spi-copi"
 		(shape input)
 		(at 45.72 101.6 180)
 		(effects
@@ -5742,7 +5955,7 @@
 		)
 		(uuid "6b3bffef-ce32-40bf-a355-1984fef49c1a")
 	)
-	(hierarchical_label "comm-spi-cipo"
+	(hierarchical_label "spi-cipo"
 		(shape output)
 		(at 45.72 104.14 180)
 		(effects
@@ -5786,7 +5999,7 @@
 			(justify left bottom)
 		)
 		(uuid "7f4ead59-5787-407d-b2ff-ea5fed848b9a")
-		(property "Net Class" "High-Current-GND"
+		(property "Net Class" "GND"
 			(at 131.826 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5863,6 +6076,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 152.4 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 152.4 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 152.4 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
@@ -5942,6 +6188,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 59.69 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 59.69 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 59.69 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
@@ -6334,6 +6613,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 59.69 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 59.69 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 59.69 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, small US symbol"
 			(at 59.69 55.88 0)
 			(hide yes)
@@ -6415,6 +6727,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 170.18 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 170.18 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 170.18 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 170.18 85.09 0)
 			(hide yes)
@@ -6492,6 +6837,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 77.47 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 77.47 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 77.47 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
@@ -6575,6 +6953,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 276.86 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 276.86 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 276.86 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 276.86 85.09 0)
 			(hide yes)
@@ -6652,6 +7063,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 55.88 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 55.88 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 55.88 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
@@ -6930,6 +7374,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 71.12 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 71.12 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 71.12 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, US symbol"
 			(at 71.12 64.77 0)
 			(hide yes)
@@ -7007,6 +7484,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 40.64 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 40.64 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 40.64 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
@@ -7478,6 +7988,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 223.52 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 223.52 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 223.52 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 223.52 85.09 0)
 			(hide yes)
@@ -7557,6 +8100,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 59.69 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 59.69 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 59.69 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, small US symbol"
 			(at 59.69 58.42 0)
 			(hide yes)
@@ -7634,6 +8210,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 52.07 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 52.07 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 52.07 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
@@ -7833,6 +8442,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 121.92 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 121.92 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 121.92 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 121.92 26.67 0)
 			(hide yes)
@@ -7912,6 +8554,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 68.58 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 68.58 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 68.58 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
@@ -8225,6 +8900,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 40.64 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 40.64 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 40.64 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
@@ -8738,6 +9446,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 259.08 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 259.08 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 259.08 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Net tie, 2 pins"
 			(at 259.08 124.46 0)
 			(hide yes)
@@ -8975,6 +9716,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 78.74 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 78.74 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 78.74 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, US symbol"
 			(at 78.74 64.77 0)
 			(hide yes)
@@ -9052,6 +9826,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 48.26 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 48.26 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 48.26 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
@@ -9136,6 +9943,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 205.74 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 205.74 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 205.74 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Net tie, 2 pins"
 			(at 205.74 124.46 0)
 			(hide yes)
@@ -9217,6 +10057,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 154.94 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 154.94 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 154.94 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
@@ -9303,6 +10176,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 73.66 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 73.66 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 73.66 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, US symbol"
 			(at 73.66 64.77 0)
 			(hide yes)
@@ -9382,6 +10288,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 123.19 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 123.19 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 123.19 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 123.19 35.56 0)
 			(hide yes)
@@ -9409,7 +10348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "aaa-pace-project-specific:DRV8353SRTAT")
+		(lib_id "specific-parts-lib:DRV8353SRTAT")
 		(at 93.98 50.8 0)
 		(mirror y)
 		(unit 1)
@@ -9808,6 +10747,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 66.04 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 66.04 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 66.04 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, US symbol"
 			(at 66.04 64.77 0)
 			(hide yes)
@@ -9887,6 +10859,39 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 76.2 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 76.2 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 76.2 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, US symbol"
@@ -10243,6 +11248,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 63.5 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.5 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 63.5 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Description" "Resistor, US symbol"
 			(at 63.5 64.77 0)
 			(hide yes)
@@ -10264,6 +11302,84 @@
 			(project "pace-core"
 				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/07c0ee34-e592-45de-bee4-8eeaeb139e14"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b59be8fe-01f8-4b5d-bcaa-715c78383b02")
+		(property "Reference" "#FLG011"
+			(at 152.4 71.755 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 152.4 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 152.4 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b225562c-65e7-48f3-a20d-20bcd1b939ef")
+		)
+		(instances
+			(project "pace-core"
+				(path "/a993745c-3062-41b3-ae55-cf32fb6be737/07c0ee34-e592-45de-bee4-8eeaeb139e14"
+					(reference "#FLG011")
 					(unit 1)
 				)
 			)

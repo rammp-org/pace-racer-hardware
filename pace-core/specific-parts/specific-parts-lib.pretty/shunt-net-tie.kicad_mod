@@ -56,18 +56,6 @@
 	(attr smd)
 	(net_tie_pad_groups "1" "2")
 	(duplicate_pad_numbers_are_jumpers no)
-	(fp_poly
-		(pts
-			(xy -1.7 0.05) (xy 1.7 0.05) (xy 1.7 0.4) (xy -1.7 0.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "caace41b-6cdc-4aa4-aa59-ce3a04e3d059")
-	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
@@ -88,9 +76,22 @@
 		(thermal_gap 0)
 		(uuid "06dea847-93c7-4e81-a1b4-00dd2cdd4762")
 	)
-	(pad "2" smd rect
+	(pad "2" smd custom
 		(at 0 -0.05 180)
 		(size 3.4 0.2)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+				(xy -1.7 -0.1) (xy 1.7 -0.1) (xy 1.7 -0.45) (xy -1.7 -0.45)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(layers "F.Cu")
 		(clearance 0)
 		(zone_connect 2)
