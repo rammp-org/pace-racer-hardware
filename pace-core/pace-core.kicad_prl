@@ -1,29 +1,29 @@
 {
   "board": {
     "active_layer": 0,
-    "active_layer_preset": "All Copper Layers",
-    "auto_track_width": true,
+    "active_layer_preset": "",
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 2,
+    "high_contrast_mode": 1,
     "net_color_mode": 2,
     "opacity": {
       "images": 0.6,
-      "pads": 0.20999999344348907,
+      "pads": 0.7900000214576721,
       "shapes": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.3499999940395355
+      "zones": 0.20000000298023224
     },
     "prototype_zone_fills": false,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
-      "keepouts": true,
+      "keepouts": false,
       "lockedItems": true,
-      "otherItems": true,
-      "pads": true,
+      "otherItems": false,
+      "pads": false,
       "text": true,
       "tracks": true,
       "vias": true,
@@ -32,7 +32,6 @@
     "visible_items": [
       "vias",
       "footprint_text",
-      "footprint_anchors",
       "ratsnest",
       "grid",
       "footprints_front",
@@ -53,7 +52,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "00000000_00000000_55555555_57555555",
+    "visible_layers": "00000000_00000000_55ffffd7_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -107,7 +106,7 @@
       103,
       103,
       103,
-      550
+      0
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

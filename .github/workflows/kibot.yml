@@ -1,47 +1,55 @@
-name: KiBot
+name: Hardware CI
 
 on:
   push:
     branches: [main]
+    tags: ['V*R*']
   pull_request:
 
-jobs:
-  kibot:
-    runs-on: ubuntu-latest
+permissions:
+  contents: write   # needed to attach release assets on tag builds
 
+jobs:
+  build:
+    name: ERC, DRC and outputs
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # git describe needs tags
 
-      # Run ERC & DRC only (skip output generation).
-      # continue-on-error keeps the job green so merges are never blocked.
-      - name: ERC & DRC
-        id: checks
-        continue-on-error: true
+      # ERC + DRC run as KiBot preflights and stop the build on errors.
+      # Warnings are reported in the ERC/DRC HTML outputs but do not fail the job;
+      # known warnings are listed in docs/errata.md.
+      - name: ERC, DRC and outputs
         uses: INTI-CMNB/KiBot@v2_k10
         with:
           config: pace-core/.kibot.yaml
           dir: pace-core/output
           schema: pace-core/pace-core.kicad_sch
           board: pace-core/pace-core.kicad_pcb
-          skip: gerbers,drill,fab_zip,bom,position
 
-      - name: Annotate check failure
-        if: steps.checks.outcome == 'failure'
-        run: echo "::warning::ERC/DRC checks failed — review the run log for details"
-
-      # Generate outputs regardless of check result.
-      - name: Generate outputs
-        uses: INTI-CMNB/KiBot@v2_k10
-        with:
-          config: pace-core/.kibot.yaml
-          dir: pace-core/output
-          schema: pace-core/pace-core.kicad_sch
-          board: pace-core/pace-core.kicad_pcb
-          additional_args: -s run_erc,run_drc
+      - name: Check README generated sections are current
+        run: |
+          python3 tools/gen_readme.py --netlist pace-core/output/meta/*.net --readme README.md --check
 
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: fab-outputs
+          name: pace-racer-${{ github.sha }}
           path: pace-core/output/
-          if-no-files-found: warn
+          if-no-files-found: error
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/V')
+        uses: softprops/action-gh-release@v2
+        with:
+          name: PACE Racer ${{ github.ref_name }}
+          generate_release_notes: true
+          files: |
+            pace-core/output/fab/*
+            pace-core/output/docs/*
+            pace-core/output/*-erc.html
+            pace-core/output/*-drc.html
+            pace-core/output/mech/*
+            pace-core/output/renders/*

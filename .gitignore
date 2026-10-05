@@ -1,43 +1,64 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
+# ---------------------------------------------------------------------------
+# Rule: humans commit sources, CI produces everything else.
+# Sources = KiCad files, custom libraries, KiBot config, docs, mech inputs.
+# ---------------------------------------------------------------------------
 
-# Temporary files
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local-only holding area (regenerable exports, scratch, render frames)
+_local/
+
+# Python venv for easyeda2kicad
+.venv/
+
+# ---- KiCad temporary / per-user files -------------------------------------
 *.000
 *.bak
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
-*-backups
+*-backups/
 *-cache*
 *-bak
 *-bak*
 *~
 ~*
+*.lck
 _autosave-*
 \#auto_saved_files\#
 *.tmp
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-~*.lck
-\#auto_saved_files#
+*.kicad_prl
+.history/
+*_missing3Dmodels.txt
+*_log_missing3Dmodels.txt
 
-# Netlist files (exported from Eeschema)
+# ---- Generated outputs (built by KiBot in CI, attached to releases) --------
+pace-core/output/
+pace-core/bom/
+pace-core/*.pdf
+pace-core/*.svg
+pace-core/*.step
+pace-core/*.stpz
+pace-core/*.wrl
+pace-core/*.glb
+pace-core/.step
 *.net
-
-# Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
-
-# Exported BOM files
 *.xml
+# Unzipped gerber folders next to the fab zips
+pace-core/production/*/
+
+# CSV exports are generated, except the archived fab packages below
 *.csv
+!pace-core/production/*.csv
 
-# Archived Backups (KiCad 6.0)
-**/*-backups/*.zip
-
-# Local git-based history (KiCad 9.0+)
-.history
-
-# Local project settings
-*.kicad_prl
+# Blender autosave
+*.blend1
+*.blend2

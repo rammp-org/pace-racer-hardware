@@ -1474,6 +1474,149 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "DSLR-M-3-1F"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DSLR-M-3-1F"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:RES-SMD_L6.3-W3.1-1"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C41382682.pdf"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "yezhan(业展)"
+			(at 0 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DSLR-M-3-1F"
+			(at 0 -15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C41382682"
+			(at 0 -17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "DSLR-M-3-1F_0_1"
+			(rectangle
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "ESP32-S3-WROOM-1"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2940,6 +3083,976 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "LM75ADP,118"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM75ADP,118"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:TSSOP-8_L3.0-W3.0-P0.65-LS4.9-BL"
+			(at 0 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Temperature-Sensors_NXP-Semicon-LM75ADP-118_C843694.html"
+			(at 0 -13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "NXP(恩智浦)"
+			(at 0 -16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LM75ADP,118"
+			(at 0 -19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C843694"
+			(at 0 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Temperature Sensors"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "LM75ADP,118_0_1"
+			(rectangle
+				(start -6.35 6.35)
+				(end 6.35 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center -5.08 5.08)
+				(radius 0.38)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -8.89 3.81 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -8.89 1.27 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -8.89 -1.27 0)
+				(length 2.54)
+				(name "OS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -8.89 -3.81 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 8.89 -3.81 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 8.89 1.27 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 8.89 3.81 180)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MST22D18G2125"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 0 12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MST22D18G2 125"
+			(at 0 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "specific-parts-lib:SW-SMD_MST22D18G2"
+			(at 0 -15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2906280.pdf"
+			(at 0 -17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN(首韩)"
+			(at 0 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MST22D18G2 125"
+			(at 0 -22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2906280"
+			(at 0 -25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Slide Switches"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "MST22D18G2125_0_1"
+			(rectangle
+				(start -6.6 1.78)
+				(end -3.56 0.76)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -6.6 -0.76)
+				(end -3.56 -1.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 4.06) (xy -5.08 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 3.05) (xy -5.08 4.06) (xy 0 4.06)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 3.05) (xy -5.08 1.78) (xy -5.33 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 1.78) (xy -4.83 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -1.78) (xy -4.83 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -3.05) (xy -5.08 -1.78) (xy -5.33 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -3.05) (xy -5.08 -4.06) (xy 0 -4.06)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.08 -4.06) (xy -5.08 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.52 1.78)
+				(end 1.52 0.76)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.52 -0.76)
+				(end 1.52 -1.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 4.57) (xy 0 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.56) (xy 0 4.06)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.05) (xy 0 1.78) (xy -0.25 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.78) (xy 0.25 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.78) (xy 0.25 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.05) (xy 0 -1.78) (xy -0.25 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.56) (xy 0 -4.06)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -4.57) (xy 0 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.51 5.08) (xy 1.27 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.51 -5.08) (xy 1.27 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.78 5.08) (xy 2.54 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.78 -5.08) (xy 2.54 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.05 5.08) (xy 3.81 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.05 -5.08) (xy 3.81 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.56 1.78)
+				(end 6.6 0.76)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start 3.56 -0.76)
+				(end 6.6 -1.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.32 5.08) (xy 5.08 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.32 -5.08) (xy 5.08 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 4.83) (xy 5.08 4.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 4.06) (xy 5.08 3.3)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 3.05) (xy 5.08 1.78) (xy 4.83 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 1.78) (xy 5.33 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -1.78) (xy 5.33 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -3.05) (xy 5.08 -1.78) (xy 4.83 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -4.06) (xy 5.08 -3.3)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -4.83) (xy 5.08 -4.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "A"
+				(at -3.3 4.38 0)
+				(effects
+					(font
+						(size 2.29 2.29)
+					)
+				)
+			)
+			(text "A"
+				(at -3.3 -5.84 0)
+				(effects
+					(font
+						(size 2.29 2.29)
+					)
+				)
+			)
+			(text "B"
+				(at 1.52 5.4 0)
+				(effects
+					(font
+						(size 2.29 2.29)
+					)
+				)
+			)
+			(text "B"
+				(at 1.52 -7.05 0)
+				(effects
+					(font
+						(size 2.29 2.29)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 7.62 270)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 5.08 7.62 270)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -5.08 -7.62 90)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 5.08 -7.62 90)
+				(length 2.54)
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "MX10T01AHTL"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4217,8 +5330,7 @@
 					(type solid)
 				)
 				(fill
-					(type color)
-					(color 160 161 255 0.5215686275)
+					(type none)
 				)
 			)
 		)
@@ -5514,454 +6626,102 @@
 		(embedded_fonts no)
 	)
 
-  (symbol "DSLR-M-3-1F"
+  (symbol "SRU1038-101Y"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (property
       "Reference"
-      "R"
+      "L"
       (at 0 5.08 0)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Value"
-      "DSLR-M-3-1F"
+      "SRU1038-101Y"
       (at 0 -5.08 0)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Footprint"
-      "specific-parts-lib:RES-SMD_L6.3-W3.1-1"
+      "specific-parts-lib:IND-SMD_L10.0-W10.0_SRU1038-100Y"
       (at 0 -7.62 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Datasheet"
-      "https://www.lcsc.com/datasheet/C41382682.pdf"
+      "https://www.lcsc.com/datasheet/C6684389.pdf"
       (at 0 -10.16 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "yezhan(业展)"
+      "BOURNS"
       (at 0 -12.70 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "MPN"
-      "DSLR-M-3-1F"
+      "SRU1038-101Y"
       (at 0 -15.24 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "LCSC Part"
-      "C41382682"
+      "C6684389"
       (at 0 -17.78 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
-    (symbol "DSLR-M-3-1F_0_1"
-      (rectangle
-        (start -2.54 1.27)
-        (end 2.54 -1.27)
+    (symbol "SRU1038-101Y_0_1"
+      (arc
+        (start -2.03 -0.01)
+        (mid -3.04 1.02)
+        (end -4.06 0.01)
         (stroke (width 0) (type default))
-        (fill (type background))
+        (fill (type none))
+      )
+      (arc
+        (start 0.00 -0.01)
+        (mid -1.01 1.02)
+        (end -2.03 0.01)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (arc
+        (start 4.06 -0.01)
+        (mid 3.05 1.02)
+        (end 2.03 0.01)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (arc
+        (start 2.03 -0.01)
+        (mid 1.02 1.02)
+        (end 0.00 0.01)
+        (stroke (width 0) (type default))
+        (fill (type none))
       )
       (pin unspecified line
         (at 5.08 -0.00 180)
-        (length 2.54)
+        (length 1.27)
         (name "2" (effects (font (size 1.27 1.27))))
         (number "2" (effects (font (size 1.27 1.27))))
       )
       (pin unspecified line
         (at -5.08 -0.00 0)
-        (length 2.54)
+        (length 1.27)
         (name "1" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27))))
       )
     )
   )
 
-  (symbol "MST22D18G2125"
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (property
-      "Reference"
-      "SW"
-      (at 0 12.70 0)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "Value"
-      "MST22D18G2 125"
-      (at 0 -12.70 0)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "Footprint"
-      "specific-parts-lib:SW-SMD_MST22D18G2"
-      (at 0 -15.24 0)
-      (hide yes)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "Datasheet"
-      "https://www.lcsc.com/datasheet/C2906280.pdf"
-      (at 0 -17.78 0)
-      (hide yes)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "Manufacturer"
-      "SHOU HAN(首韩)"
-      (at 0 -20.32 0)
-      (hide yes)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "MPN"
-      "MST22D18G2 125"
-      (at 0 -22.86 0)
-      (hide yes)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "LCSC Part"
-      "C2906280"
-      (at 0 -25.40 0)
-      (hide yes)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (property
-      "ki_keywords"
-      "Slide Switches"
-      (at 0 -27.94 0)
-      (hide yes)
-      (effects (font (size 1.27 1.27) ))
-    )
-    (symbol "MST22D18G2125_0_1"
-      (rectangle
-        (start -6.60 1.78)
-        (end -3.56 0.76)
-        (stroke (width 0) (type default))
-        (fill (type background))
-      )
-      (rectangle
-        (start -1.52 1.78)
-        (end 1.52 0.76)
-        (stroke (width 0) (type default))
-        (fill (type background))
-      )
-      (rectangle
-        (start 3.56 1.78)
-        (end 6.60 0.76)
-        (stroke (width 0) (type default))
-        (fill (type background))
-      )
-      (rectangle
-        (start -6.60 -0.76)
-        (end -3.56 -1.78)
-        (stroke (width 0) (type default))
-        (fill (type background))
-      )
-      (rectangle
-        (start -1.52 -0.76)
-        (end 1.52 -1.78)
-        (stroke (width 0) (type default))
-        (fill (type background))
-      )
-      (rectangle
-        (start 3.56 -0.76)
-        (end 6.60 -1.78)
-        (stroke (width 0) (type default))
-        (fill (type background))
-      )
-      (polyline
-        (pts
-          (xy 0.00 -3.05) (xy 0.00 -1.78) (xy -0.25 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 -1.78) (xy 0.25 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 -3.05) (xy 5.08 -1.78) (xy 4.83 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 -1.78) (xy 5.33 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 -3.05) (xy -5.08 -1.78) (xy -5.33 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 -1.78) (xy -4.83 -2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 -3.56) (xy 0.00 -4.06)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 -4.57) (xy 0.00 -5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.51 -5.08) (xy 1.27 -5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.78 -5.08) (xy 2.54 -5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 3.05 -5.08) (xy 3.81 -5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 4.32 -5.08) (xy 5.08 -5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 -4.83) (xy 5.08 -4.32)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 -4.06) (xy 5.08 -3.30)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 -3.05) (xy -5.08 -4.06) (xy 0.00 -4.06)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 -4.06) (xy -5.08 -5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 3.05) (xy 0.00 1.78) (xy -0.25 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 1.78) (xy 0.25 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 3.05) (xy 5.08 1.78) (xy 4.83 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 1.78) (xy 5.33 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 3.05) (xy -5.08 1.78) (xy -5.33 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 1.78) (xy -4.83 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 3.56) (xy 0.00 4.06)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.00 4.57) (xy 0.00 5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0.51 5.08) (xy 1.27 5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.78 5.08) (xy 2.54 5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 3.05 5.08) (xy 3.81 5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 4.32 5.08) (xy 5.08 5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 4.83) (xy 5.08 4.32)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 5.08 4.06) (xy 5.08 3.30)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 3.05) (xy -5.08 4.06) (xy 0.00 4.06)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -5.08 4.06) (xy -5.08 5.08)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (text "A"
-        (at -3.30 4.38 0)
-        (effects (font (size 2.29 2.29)))
-      )
-      (text "B"
-        (at 1.52 5.40 0)
-        (effects (font (size 2.29 2.29)))
-      )
-      (text "A"
-        (at -3.30 -5.84 0)
-        (effects (font (size 2.29 2.29)))
-      )
-      (text "B"
-        (at 1.52 -7.05 0)
-        (effects (font (size 2.29 2.29)))
-      )
-      (pin unspecified line
-        (at -5.08 7.62 270)
-        (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 0.00 7.62 270)
-        (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 5.08 7.62 270)
-        (length 2.54)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at -5.08 -7.62 90)
-        (length 2.54)
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 0.00 -7.62 90)
-        (length 2.54)
-        (name "5" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 5.08 -7.62 90)
-        (length 2.54)
-        (name "6" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-
-  (symbol "LM75ADP,118"
+  (symbol "XT30"
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -5973,112 +6733,88 @@
     )
     (property
       "Value"
-      "LM75ADP,118"
+      "XT30"
       (at 0 -8.89 0)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Footprint"
-      "specific-parts-lib:TSSOP-8_L3.0-W3.0-P0.65-LS4.9-BL"
+      "specific-parts-lib:CONN-TH_4P-XT30PW-M"
       (at 0 -11.43 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Datasheet"
-      "https://lcsc.com/product-detail/Temperature-Sensors_NXP-Semicon-LM75ADP-118_C843694.html"
+      "https://www.lcsc.com/datasheet/C19268030.pdf"
       (at 0 -13.97 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "Manufacturer"
-      "NXP(恩智浦)"
+      "AMASS(艾迈斯)"
       (at 0 -16.51 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "MPN"
-      "LM75ADP,118"
+      "XT30PW(2+2)-M.G.B"
       (at 0 -19.05 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "LCSC Part"
-      "C843694"
+      "C19268030"
       (at 0 -21.59 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
     (property
       "ki_keywords"
-      "Temperature Sensors"
+      "plug"
       (at 0 -24.13 0)
       (hide yes)
       (effects (font (size 1.27 1.27) ))
     )
-    (symbol "LM75ADP,118_0_1"
+    (symbol "XT30_0_1"
       (rectangle
-        (start -6.35 6.35)
-        (end 6.35 -6.35)
+        (start -1.27 6.35)
+        (end 3.81 -6.35)
         (stroke (width 0) (type default))
         (fill (type background))
       )
       (circle
-        (center -5.08 5.08)
+        (center 0.00 5.08)
         (radius 0.38)
         (stroke (width 0) (type default))
         (fill (type none))
       )
       (pin unspecified line
-        (at -8.89 3.81 0)
+        (at -3.81 -3.81 0)
         (length 2.54)
-        (name "SDA" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at -8.89 1.27 0)
-        (length 2.54)
-        (name "SCL" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at -8.89 -1.27 0)
-        (length 2.54)
-        (name "OS" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at -8.89 -3.81 0)
-        (length 2.54)
-        (name "GND" (effects (font (size 1.27 1.27))))
+        (name "4" (effects (font (size 1.27 1.27))))
         (number "4" (effects (font (size 1.27 1.27))))
       )
       (pin unspecified line
-        (at 8.89 -3.81 180)
+        (at -3.81 -1.27 0)
         (length 2.54)
-        (name "A2" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
       )
       (pin unspecified line
-        (at 8.89 -1.27 180)
+        (at -3.81 1.27 0)
         (length 2.54)
-        (name "A1" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
       )
       (pin unspecified line
-        (at 8.89 1.27 180)
+        (at -3.81 3.81 0)
         (length 2.54)
-        (name "A0" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at 8.89 3.81 180)
-        (length 2.54)
-        (name "VCC" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
       )
     )
   )

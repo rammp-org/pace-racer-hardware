@@ -1,0 +1,22 @@
+# Large binary assets go through Git LFS.
+# Enable LFS in CI checkouts with `lfs: true` on actions/checkout.
+*.blend        filter=lfs diff=lfs merge=lfs -text
+*.psd          filter=lfs diff=lfs merge=lfs -text
+*.mp4          filter=lfs diff=lfs merge=lfs -text
+*.mkv          filter=lfs diff=lfs merge=lfs -text
+docs/media/**  filter=lfs diff=lfs merge=lfs -text
+graphics/src/** filter=lfs diff=lfs merge=lfs -text
+
+# KiCad files are text; keep LF endings so diffs and kiri stay clean.
+*.kicad_pcb    text eol=lf
+*.kicad_sch    text eol=lf
+*.kicad_pro    text eol=lf
+*.kicad_sym    text eol=lf
+*.kicad_mod    text eol=lf
+*.kicad_dru    text eol=lf
+*.kicad_wks    text eol=lf
+*-lib-table    text eol=lf
+*.kibot.yaml   text eol=lf
+
+# Library 3D models are small and stay in plain git so CI renders work
+# without LFS quota; board-level STEP exports are generated, not tracked.
