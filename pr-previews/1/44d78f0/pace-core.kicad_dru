@@ -1,8 +1,0 @@
-(version 1)
-
-# Shunt net ties (NT1..NT3) intentionally overlap the low-side shunt pads and
-# the ground pour to make the Kelvin sense connection. Clearance is waived for
-# anything touching those footprints. See docs/decisions/0003-shunt-net-tie.md
-(rule "shunt-net-tie-clearance"
-	(condition "A.memberOfFootprint('NT1') || A.memberOfFootprint('NT2') || A.memberOfFootprint('NT3')")
-	(constraint clearance (min 0mm)))
