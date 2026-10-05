@@ -5880,7 +5880,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "LCSC Part" "C178585"
 			(at 133.35 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5903,17 +5903,6 @@
 			)
 		)
 		(property "MPN" "EEEFPV101XAP"
-			(at 133.35 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC part" "C178585"
 			(at 133.35 114.3 0)
 			(hide yes)
 			(show_name no)

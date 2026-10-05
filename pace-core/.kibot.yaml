@@ -1,8 +1,11 @@
 # KiBot configuration for PACE Racer.
 # Everything under pace-core/output/ is generated from this file by CI.
-# Local run (needs docker):
-#   docker run --rm -v "$PWD/..":/work -w /work/pace-core ghcr.io/inti-cmnb/kicad10_auto_full:latest \
-#     kibot -c .kibot.yaml -e pace-core.kicad_sch -b pace-core.kicad_pcb -d output
+# Local run (needs docker), from the repo root:
+#   docker run --rm -v "$PWD":/work -w /work ghcr.io/inti-cmnb/kicad10_auto_full:latest \
+#     kibot -c pace-core/.kibot.yaml -e pace-core/pace-core.kicad_sch -b pace-core/pace-core.kicad_pcb -d pace-core/output
+# KiBot rewrites pace-core.kicad_pcb (zone fill) and pace-core.kicad_pro (REV)
+# during a run. After a local run, restore them:
+#   git checkout -- pace-core/pace-core.kicad_pcb pace-core/pace-core.kicad_pro
 kibot:
   version: 1
 
@@ -19,11 +22,13 @@ preflight:
       command: 'git describe --tags --match "V*R*" --always --dirty'
     - name: GIT_SHA
       command: 'git rev-parse --short HEAD'
-  run_erc:
+  erc:
     warnings_as_errors: false
-  run_drc:
+    format: [HTML, JSON]
+  drc:
     warnings_as_errors: false
     schematic_parity: true
+    format: [HTML, JSON]
   fill_zones: true
 
 outputs:
@@ -147,11 +152,6 @@ outputs:
         - layers: [{layer: B.Fab}, {layer: Edge.Cuts}]
           sheet: Bottom assembly
           mirror: true
-
-  - name: drc_report
-    comment: DRC/ERC results as HTML
-    type: report
-    dir: docs
 
   # ---------------- Mechanical ----------------
   - name: step

@@ -18,25 +18,16 @@ jobs:
         with:
           fetch-depth: 0      # git describe needs tags
 
-      # ERC + DRC are blocking. Warnings are reported but do not fail the job;
+      # ERC + DRC run as KiBot preflights and stop the build on errors.
+      # Warnings are reported in the ERC/DRC HTML outputs but do not fail the job;
       # known warnings are listed in docs/errata.md.
-      - name: ERC and DRC
+      - name: ERC, DRC and outputs
         uses: INTI-CMNB/KiBot@v2_k10
         with:
           config: pace-core/.kibot.yaml
           dir: pace-core/output
           schema: pace-core/pace-core.kicad_sch
           board: pace-core/pace-core.kicad_pcb
-          skip: all
-
-      - name: Generate outputs
-        uses: INTI-CMNB/KiBot@v2_k10
-        with:
-          config: pace-core/.kibot.yaml
-          dir: pace-core/output
-          schema: pace-core/pace-core.kicad_sch
-          board: pace-core/pace-core.kicad_pcb
-          skip: run_erc,run_drc
 
       - name: Check README generated sections are current
         run: |
@@ -58,5 +49,7 @@ jobs:
           files: |
             pace-core/output/fab/*
             pace-core/output/docs/*
+            pace-core/output/*-erc.html
+            pace-core/output/*-drc.html
             pace-core/output/mech/*
             pace-core/output/renders/*
