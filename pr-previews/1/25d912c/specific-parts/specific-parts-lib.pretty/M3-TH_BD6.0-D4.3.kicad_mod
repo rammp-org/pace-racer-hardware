@@ -1,0 +1,159 @@
+(footprint "M3-TH_BD6.0-D4.3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "07c266db-1b3a-436b-97e3-2c2b74959326")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "M3-TH_BD6.0-D4.3"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "c3d1f7d0-31a6-41fc-a944-63ef0d997301")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "008ea210-e9bb-4f6d-87ab-cbdf4c9889b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4923aad5-25e7-431a-a809-067785acde23")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC Part" "C5221843"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "86191d18-f8bd-4f33-a553-5f9ef0d75d46")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3871dc08-558f-4707-a528-864da9c31a24")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -2.7 0)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "34aa09b9-b599-4dee-84db-4e9cd8dde83f")
+	)
+	(pad "1" thru_hole circle
+		(at -1.91 -1.91)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "be4c5c92-d57a-4416-83d6-8eb05e9889c3")
+	)
+	(pad "1" thru_hole circle
+		(at -1.91 1.91)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "31f77b9a-886f-4c3a-939a-7ee2bcf23825")
+	)
+	(pad "1" thru_hole circle
+		(at 0 -2.7)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f8028dcc-7c92-41d5-8c37-b5bbfdda0c5d")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 6.5 6.5)
+		(drill 4.300016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(clearance 0)
+		(uuid "bc0b5d07-c788-45fd-b885-aa179ed0a894")
+	)
+	(pad "1" thru_hole circle
+		(at 0 2.7)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e984d1af-b4cb-4612-aa15-8d4ac6eec57e")
+	)
+	(pad "1" thru_hole circle
+		(at 1.91 -1.91)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fd0da931-4519-4710-bc42-ee94c1c7aabe")
+	)
+	(pad "1" thru_hole circle
+		(at 1.91 1.91)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2304872d-13ac-4650-926c-5396b4fddd38")
+	)
+	(pad "1" thru_hole circle
+		(at 2.7 0)
+		(size 0.62 0.62)
+		(drill 0.31)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ffa07a6a-e7ed-40cd-bdfc-20bd99993b58")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/specific-parts/specific-parts-lib.3dshapes/M3-TH_BD6.0-D4.3.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

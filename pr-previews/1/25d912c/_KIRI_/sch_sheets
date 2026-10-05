@@ -1,0 +1,5 @@
+pace-core|pace-core.kicad_sch||pace-core|pace-core
+pace-3-phase-inverter|pace-3-phase-inverter.kicad_sch||Gate Driver and Half Bridges|pace-core-Gate Driver and Half Bridges
+pace-mechanicals|pace-mechanicals.kicad_sch||Sensing, Mechanicals, Config|pace-core-Sensing, Mechanicals, Config
+pace-power-reg|pace-power-reg.kicad_sch||Power and Reg|pace-core-Power and Reg
+pace-connectors-sheet|pace-connectors-sheet.kicad_sch||Connectors|pace-core-Connectors
